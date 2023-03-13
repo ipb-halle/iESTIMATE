@@ -36,5 +36,7 @@ devtools::check()
 #usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 #usethis::use_github()
 
+# Install package
+devtools::install_github("ipb-halle/iESTIMATE")
 
 
