@@ -48,6 +48,7 @@ tenerife[["class_list"]] <- read.table(file="use-cases/tenerife/class_list.tsv",
 tenerife[["subclass_list"]] <- read.table(file="use-cases/tenerife/subclass_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 tenerife[["superclass_list"]] <- read.table(file="use-cases/tenerife/superclass_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 tenerife[["moldes_list"]] <- read.table(file="use-cases/tenerife/moldes_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
+tenerife[["species"]] <- as.factor(as.character(read.table(file="use-cases/tenerife/species_samples.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)))
 usethis::use_data(tenerife, overwrite=TRUE)
 #use_r("tenerife")
 
