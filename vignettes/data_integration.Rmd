@@ -1,0 +1,435 @@
+---
+title: "Marchantiales Data Integration"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Marchantiales Data Integration}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Setup
+
+Installing and loading our package.
+
+```{r}
+#devtools::install_github("https://github.com/ipb-halle/iESTIMATE")
+library(iESTIMATE)
+```
+
+# Data integration via comparison of phylogenetic trees
+
+## Phylogenetic tree of trnLF marker sequences
+
+First, load required packages.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+require(phangorn)
+```
+
+Show the sequence data.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+marchantiales$phylo_trnLF
+```
+
+Construct a tree using a simple unweighted pair group with arithmetic mean agglomerative hierarchical clustering (UPGMA) method on sequences and calculate values of edges using non-parametric bootstrapping.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_trnLF_tree_dist <- dist.ml(marchantiales$phylo_trnLF)
+phylo_trnLF_tree_upgma  <- upgma(phylo_trnLF_tree_dist)
+phylo_trnLF_tree_bs_upgma <- bootstrap.phyDat(marchantiales$phylo_trnLF, bs=1000, multicore=FALSE, mc.cores=4, function(x) { upgma(dist.ml(x)) })
+```
+
+Plot the resulting tree and add a scale bar to indicate the depth of the tree.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+par(mfrow=c(1,1), mar=c(1,1,4,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+phylo_trnLF_tree_plot <- phangorn::plotBS(phylo_trnLF_tree_upgma, phylo_trnLF_tree_bs_upgma, main="UPGMA tree of trnLF sequences", type="phylogram", method="FBP", digits=2)
+add.scale.bar()
+```
+
+## Phylogenetic tree of phenotypic traits
+
+To construct a tree from phenotypic traits, in this example the measured morphometric characteristics from the study are used. As the data matrix contains mixed continuous, ordinal and boolean values, gap weighting using 8 states according to Thiele (1993) is performed.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phyl_list <- marchantiales$char_list
+phyl_list[is.na(phyl_list)] <- "-"
+suppressWarnings(
+for (i in 1:ncol(phyl_list)) {
+	# Boolean values
+	if ((all(levels(as.factor(phyl_list[,i])) == c("0", "1"))) | (all(levels(as.factor(phyl_list[,i])) == c("-", "1")))) {
+		phyl_list[,i] <- phyl_list[,i]
+	# Continuous or ordinal values
+	} else {
+		phyl_list[,i] <- gap_weighting(phyl_list[,i], states=8)
+	}
+	phyl_list[,i] <- as.character(phyl_list[,i])
+	phyl_list[,i] <- as.factor(phyl_list[,i])
+}
+)
+phyl_list <- as.data.frame(t(phyl_list))
+```
+
+Now, the weighted phenotypic traits are imported as phylogeny object in R.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_char <- phyDat(phyl_list, type="USER", levels=levels(as.factor(apply(phyl_list, 1, function(x) { as.factor(as.character(x)) }))) )
+phylo_char
+```
+
+Construct a simple tree again using UPGMA with bootstrapping.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_char_tree_dist <- dist.hamming(phylo_char)
+phylo_char_tree_upgma  <- upgma(phylo_char_tree_dist)
+phylo_char_tree_bs_upgma <- bootstrap.phyDat(phylo_char, bs=1000, multicore=FALSE, mc.cores=4, function(x) { upgma(dist.hamming(x)) })
+```
+
+Plot the tree and add a scale bar.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+par(mfrow=c(1,1), mar=c(1,1,4,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+phylo_char_tree_plot <- plotBS(phylo_char_tree_upgma, phylo_char_tree_bs_upgma, main="UPGMA tree of morphometric characters", type="phylogram", method="FBP", digits=2)
+add.scale.bar()
+```
+
+## Phylogenetic tree of molecular traits
+
+Construct a tree from the molecular trait data. Molecular traits are usually measured in (biological) replications. In order to compare/integrate replicated traits with the other traits (which are usually only assessed as single trait for a species), molecular traits need to be first merged based on their median values per species.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_comp_sel_list <- NULL
+for (i in unique(gsub(x=rownames(marchantiales$comp_list), pattern="\\.\\d.*", replacement=""))) phylo_comp_sel_list <- rbind(phylo_comp_sel_list, apply(X=marchantiales$comp_list[gsub(x=rownames(marchantiales$comp_list), pattern="\\.\\d.*", replacement="")==i, ], MARGIN=2, FUN=function(x) { median(x) } ))
+```
+
+Fix naming.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+rownames(phylo_comp_sel_list) <- unique(gsub(x=rownames(marchantiales$comp_list), pattern="\\.\\d.*", replacement=""))
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="A.gracilis.SWE", replacement="Asterella.gracilis")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="A.hyalina.GOT", replacement="Athalamia.hyalina.var..suecica")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="M.fragrans.GOT", replacement="Mannia.fragrans")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.hemisphaerica.GOT", replacement="Reboulia.hemisphaerica.subsp..hemisphaerica")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.beyrichiana.OEL", replacement="Riccia.beyrichiana")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.bifurca.GOT", replacement="Riccia.bifurca")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.canaliculata.GOT", replacement="Riccia.canaliculata")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.cavernosa.SWE", replacement="Riccia.cavernosa")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.ciliifera.GOT", replacement="Riccia.ciliifera.SWE")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.ciliifera.HAL", replacement="Riccia.ciliifera.HAL")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.gothica.GOT", replacement="Riccia.gothica")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.gougetiana.HAL", replacement="Riccia.gougetiana.var..armatissima")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.huebeneriana.GOT", replacement="Riccia.huebeneriana")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.sorocarpa.SWE", replacement="Riccia.sorocarpa")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.subbifurca.OE1", replacement="Riccia.subbifurca.SWE2")
+rownames(phylo_comp_sel_list) <- gsub(x=rownames(phylo_comp_sel_list), pattern="R.subbifurca.OE2", replacement="Riccia.subbifurca.SWE1")
+```
+
+Now, perform gap weighting with 8 states as above.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_comp_sel_list[is.na(phylo_comp_sel_list)] <- "-"
+phylo_comp_sel_list[(phylo_comp_sel_list==0)] <- "-"
+suppressWarnings(
+for (i in 1:ncol(phylo_comp_sel_list)) {
+	if ((all(levels(as.factor(phylo_comp_sel_list[,i])) == c("0", "1"))) | (all(levels(as.factor(phylo_comp_sel_list[,i])) == c("-", "1")))) {
+		phylo_comp_sel_list[,i] <- phylo_comp_sel_list[,i]
+	} else {
+		phylo_comp_sel_list[,i] <- gap_weighting(phylo_comp_sel_list[,i], states=8)
+	}
+	phylo_comp_sel_list[,i] <- as.character(phylo_comp_sel_list[,i])
+	phylo_comp_sel_list[,i][is.na(phylo_comp_sel_list[,i])] <- "-"
+	phylo_comp_sel_list[phylo_comp_sel_list[,i] %in% 'NaN', i] <- "-"
+}
+)
+phylo_comp_sel_list <- as.data.frame(t(phylo_comp_sel_list))
+```
+
+Export as phylogeny object in R.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_comp_sel <- phyDat(phylo_comp_sel_list, type="USER", levels=levels(as.factor(apply(phylo_comp_sel_list, 1, function(x) { as.factor(as.character(x)) }))) )
+phylo_comp_sel
+```
+
+Calculate the tree again using UPGMA.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+phylo_comp_sel_tree_dist <- dist.hamming(phylo_comp_sel)
+phylo_comp_sel_tree_upgma  <- upgma(phylo_comp_sel_tree_dist)
+phylo_comp_sel_tree_bs_upgma <- bootstrap.phyDat(phylo_comp_sel, bs=1000, multicore=FALSE, mc.cores=4, function(x) { upgma(dist.hamming(x)) })
+```
+
+Plot the tree and add a scale bar.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+par(mfrow=c(1,1), mar=c(1,1,4,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+phylo_comp_sel_tree_plot <- plotBS(phylo_comp_sel_tree_upgma, phylo_comp_sel_tree_bs_upgma, main="UPGMA tree of molecular traits", type="phylogram", method="FBP", digits=2)
+add.scale.bar()
+```
+
+## Comparison of phylogenetic trees
+
+While the resolution of the trees can be compared using the scale bar, trees can be directly compared using visual explorations and with mathematical metrics.
+
+```{r, fig.width=14, fig.height=6, fig.show='hold', out.width=700, out.height=300}
+require(phytools)
+```
+
+Plot the trees next to each other.
+
+```{r, fig.width=14, fig.height=6, fig.show='hold', out.width=700, out.height=300}
+par(mfrow=c(1,2), mar=c(1,1,1,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+plot(cophylo(phylo_comp_sel_tree_upgma, phylo_trnLF_tree_upgma, assoc=NULL, rotate=FALSE), rotate.multi=TRUE, offset=10, fsize=1, lwd=1.2, pts=1.2, link.type="curved", link.lwd=4, link.lty="solid", link.col=make.transparent("mediumorchid4",0.50))
+plot(cophylo(phylo_trnLF_tree_upgma, phylo_char_tree_upgma, assoc=NULL, rotate=FALSE), rotate.multi=TRUE, offset=10, fsize=1, lwd=1.2, pts=1.2, link.type="curved", link.lwd=4, link.lty="solid", link.col=make.transparent("goldenrod3",0.50))
+```
+
+Please note that the trees are different than in the paper due to the simple UPGMA method which does not require intensive computations.
+
+Now, let's calculate some comparison metrics. The most intuitive value is probably the Robinson Fould's metric.
+
+The comparison metrics of sequences and molecular traits.
+
+```{r, fig.width=14, fig.height=6, fig.show='hold', out.width=700, out.height=300}
+phangorn::treedist(tree1=phylo_comp_sel_tree_upgma, tree2=midpoint(phylo_trnLF_tree_upgma), check.labels=TRUE)
+RF.dist(tree1=phylo_comp_sel_tree_upgma, tree2=midpoint(phylo_trnLF_tree_upgma), check.labels=TRUE, normalize=TRUE, rooted=TRUE)
+```
+
+The comparison metrics of sequences and phenotypic traits.
+
+```{r, fig.width=14, fig.height=6, fig.show='hold', out.width=700, out.height=300}
+phangorn::treedist(tree1=phylo_char_tree_upgma, tree2=midpoint(phylo_trnLF_tree_upgma), check.labels=TRUE)
+RF.dist(tree1=phylo_char_tree_upgma, tree2=midpoint(phylo_trnLF_tree_upgma), check.labels=TRUE, normalize=TRUE, rooted=TRUE)
+```
+
+# Data integration via exploration of trait spaces
+
+## Hypervolumes to visualize the phenotypic trait space
+
+Load required packages.
+
+```{r, message=FALSE, fig.width=6, fig.height=6, out.width=600, out.height=600}
+require(ggplot2)
+require(ggfortify)
+require(cluster)
+```
+
+Construct the data matrix.
+
+```{r, message=FALSE, fig.width=6, fig.height=6, out.width=600, out.height=600}
+charphyl_list <- phyl_list
+charphyl_list[charphyl_list=="-"] <- 0
+for (i in 1:ncol(charphyl_list)) charphyl_list[,i] <- as.numeric(charphyl_list[,i])
+charphyl_list <- t(charphyl_list)
+```
+
+Resample the data 32 times to get a more realistic representation of the hypervolumes.
+
+```{r, message=FALSE, fig.width=6, fig.height=6, out.width=600, out.height=600}
+for (j in 1:32) { for (i in 1:16) { charphyl_list <- cbind(charphyl_list, sample(charphyl_list[,i], prob=charphyl_list[,i], replace=TRUE)) } }
+charphyl_list <- t(charphyl_list)
+```
+
+Visualize the phenotypic trait space with using the partitioning around medoids method. Please note that hypervolumes will be sightly different than in the paper due to resampling.
+
+```{r, message=FALSE, fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_char_space <- pam(charphyl_list, nlevels(as.factor(marchantiales$metadata$species)))
+```
+
+Plot the hypervolumes (trait spaces) for each species.
+
+```{r, message=FALSE, fig.width=6, fig.height=6, out.width=600, out.height=600}
+autoplot(model_char_space, data=charphyl_list, frame=FALSE, frame.type="norm", size=3, alpha=0.8) +
+	theme(panel.grid.minor=element_line(color="lightgrey", linewidth=0.25, linetype=3),
+		  panel.grid.major=element_line(color="grey", linewidth=0.5, linetype=3),
+		  panel.background=element_blank(),
+		  panel.border=element_rect(color="black", fill=NA, size=1) ) +
+	scale_color_manual(values=levels(as.factor(marchantiales$metadata$color)), labels=gsub(x=levels(as.factor(marchantiales$metadata$species)), pattern="\\.", replacement="\\. ")) +
+	scale_fill_manual(values=levels(as.factor(marchantiales$metadata$color))) + 
+	guides(shape = guide_legend(override.aes=list(size=3))) +
+	theme(legend.justification=c(0,-1.38), legend.key.width=unit(0.05,"cm"), legend.key.height=unit(0.01,"cm"), legend.position=c(0.01,0.01), legend.direction="vertical", legend.background=element_blank(), legend.box.background=element_blank(), legend.text=element_text(face="italic"), legend.title=element_blank())
+```
+
+## Hypervolumes to visualize the molecular trait space
+
+To visualize the molecular trait space partitioning around medoids method is used as above.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_comp_space <- pam(t(marchantiales$comp_list), nlevels(as.factor(marchantiales$metadata$species)))
+```
+
+Plot the hypervolumes (trait spaces) for each species.
+
+```{r, fig.width=6, fig.height=6, out.width=600, out.height=600}
+autoplot(model_comp_space, data=t(marchantiales$comp_list), frame=FALSE, frame.type="norm", size=3, alpha=0.8) +
+	theme(panel.grid.minor=element_line(color="lightgrey", linewidth=0.25, linetype=3),
+		  panel.grid.major=element_line(color="grey", linewidth=0.5, linetype=3),
+		  panel.background=element_blank(),
+		  panel.border=element_rect(color="black", fill=NA, size=1) ) +
+	scale_color_manual(values=levels(as.factor(marchantiales$metadata$color)), labels=gsub(x=levels(as.factor(marchantiales$metadata$species)), pattern="\\.", replacement="\\. ")) +
+	scale_fill_manual(values=levels(as.factor(marchantiales$metadata$color))) +
+	theme(legend.justification=c(0,-1.38), legend.position=c(0.01,0.01), legend.direction="vertical", legend.background=element_blank(), legend.box.background=element_blank(), legend.key.size=unit(1.5,"pt"), legend.text=element_text(face="italic"), legend.title=element_blank())
+```
+
+# Data integration via correlating different levels
+
+## Ordination (dbRDA) to visualize correlations of molecular and measured morphometric traits
+
+First, load required packages.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+require(vegan)
+```
+
+Prepare the data matrix and only use measured morphometric traits.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+chartrait_list <- marchantiales$char_list[match(gsub(x=gsub(x=gsub(x=rownames(marchantiales$comp_list), pattern="^[^\\.]+\\.", replacement=""), pattern="\\..*", replacement=""), pattern="hueberiana", replacement="huebeneriana"), gsub(x=gsub(x=rownames(marchantiales$char_list), pattern="^[^\\.]+\\.", replacement=""), pattern="\\..*", replacement="")), ]
+rownames(chartrait_list) <- rownames(marchantiales$comp_list)
+chartrait_list <- chartrait_list[, c("thallus.width", "thallus.length", "thallus.violet.pigments", "ventral.scales", "ventral.scales.slime.cells", "ventral.scales.violet.pigments", "ventral.scales.hairs", "air.pores", "air.pores.width.adaxial", "air.pores.height.adaxial", "air.pores.cells.cross", "air.pores.width.cross", "air.pores.height.cross", "epidermis.cells.width.cross", "epidermis.cells.height.cross", "subepidermis.cells.width.cross", "subepidermis.cells.height.cross", "thallus.width.cross", "thallus.height.cross", "thallus.wing.height.cross", "thallus.wing.angle.cross", "thallus.wing.width.cross", "thallus.area.cross")]
+chartrait_list[is.na(chartrait_list)] <- 0
+```
+
+Create the formula for dbRDA.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+attach(chartrait_list)
+char_list_rda_formula <- formula(paste0("~ 0 + ", paste0(colnames(chartrait_list),collapse=" + ")))
+char_list_rda_y <- data.frame(model.matrix(char_list_rda_formula))
+detach(chartrait_list)
+```
+
+Create null model with intercept only. The Bray-Curtis distance measure is chosen here as it is usually most applicable to ecological data with mixed contiunuous and ordinal values.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_0_compchar_list_rda <- vegan::dbrda(formula=marchantiales$comp_list ~ 1, data=char_list_rda_y, distance="bray", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+```
+
+Create model with all explanatory variables.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_1_compchar_list_rda <- vegan::dbrda(formula=marchantiales$comp_list ~ ., data=char_list_rda_y, distance="bray", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+```
+
+Now, stepwise forward selection is performed using 100 permutations. Please note that result will be slightly different due to the fact we only choose 100 permutations here to speed up the variable selection.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+invisible(
+model_step_compchar_list_rda <- ordistep(object=model_0_compchar_list_rda, scope=formula(model_1_compchar_list_rda), R2scope=TRUE, trace=TRUE, Pin=0.05, Pout=0.06, direction="forward", perm.max=100)
+)
+model_step_compchar_list_rda_scores <- vegan::scores(model_step_compchar_list_rda)
+```
+
+Now, the dbRDA is computed with the selected model by permutation tests in constrained ordination.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_compchar_list_rda <- vegan::dbrda(formula=as.formula(model_step_compchar_list_rda$terms), data=char_list_rda_y, distance="euclidean", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+model_compchar_list_rda_ef_formula <- update(as.formula(model_step_compchar_list_rda$terms), model_compchar_list_rda ~ .)
+model_compchar_list_rda_ef_factors <- as.factor(sapply(strsplit(as.character(model_compchar_list_rda_ef_formula)[[3]], "\\+"), function(x) { x <- gsub("(\\`|^ | $)","",x) }))
+model_compchar_list_rda_ef <- envfit(formula=model_compchar_list_rda_ef_formula, data=char_list_rda_y, choices=c(1:2), perm=100)
+model_compchar_list_rda_scores <- vegan::scores(model_compchar_list_rda, choices=c(1:2))
+```
+
+Determine the goodness of fit statistic via the squared correlation coefficient to assess significance of selected variables.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_compchar_list_rda_fit <- data.frame(r2=c(model_compchar_list_rda_ef$vectors$r,model_compchar_list_rda_ef$factors$r),
+										  pvals=c(model_compchar_list_rda_ef$vectors$pvals,model_compchar_list_rda_ef$factors$pvals) )
+rownames(model_compchar_list_rda_fit) <- c(names(model_compchar_list_rda_ef$vectors$r),names(model_compchar_list_rda_ef$factors$r))
+model_compchar_list_rda_fit
+```
+
+Plot the dbRDA.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+par(mfrow=c(1,1), mar=c(4,4,0.1,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+plot(model_compchar_list_rda_scores$sites[,c(1:2)],
+	 xlim=c(min(model_compchar_list_rda_scores$sites[,1])-10, max(model_compchar_list_rda_scores$sites[,1])+14),
+	 ylim=c(min(model_compchar_list_rda_scores$sites[,2]), max(model_compchar_list_rda_scores$sites[,2])),
+	 xlab=paste0("dbRDA1 (",round(as.data.frame(summary(model_compchar_list_rda)$cont$importance)["Proportion Explained",c(1)]*100,2),"%)"),
+	 ylab=paste0("dbRDA2 (",round(as.data.frame(summary(model_compchar_list_rda)$cont$importance)["Proportion Explained",c(2)]*100,2),"%)"),
+	 pch=19, cex=1.4, col=marchantiales$metadata$color, main="")
+plot(model_compchar_list_rda_ef, cex=0.75, p.max=1, col="black")
+legend("topleft", bty="n", legend=gsub(x=levels(as.factor(marchantiales$metadata$species)), pattern="\\.", replacement="\\. "), pch=19, col=levels(as.factor(marchantiales$metadata$color)), pt.cex=0.8, cex=0.7, y.intersp=0.8, text.width=0.1, text.font=3)
+```
+
+## Ordination (dbRDA) to visualize correlations of molecular and traits obtained from TRY
+
+Prepare the data matrix.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+# Prepare data matrix
+chartrait_list <- marchantiales$char_list
+chartrait_list[is.na(chartrait_list)] <- 0
+chartrait_list <- chartrait_list[match(gsub(x=gsub(x=gsub(x=rownames(marchantiales$comp_list), pattern="^[^\\.]+\\.", replacement=""), pattern="\\..*", replacement=""), pattern="hueberiana", replacement="huebeneriana"), gsub(x=gsub(x=rownames(chartrait_list), pattern="^[^\\.]+\\.", replacement=""), pattern="\\..*", replacement="")), ]
+```
+
+Create formula for dbRDA.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+attach(marchantiales$trait_list)
+trait_list_rda_formula <- formula(paste0("~ 0 + ", paste0(colnames(marchantiales$trait_list),collapse=" + ")))
+trait_list_rda_y <- data.frame(model.matrix(trait_list_rda_formula))
+detach(marchantiales$trait_list)
+```
+
+Null model with intercept only.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_0_trait_list_rda <- vegan::dbrda(formula=marchantiales$comp_list ~ 1, data=trait_list_rda_y, distance="euclidean", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+```
+
+Model with all explanatory variables.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_1_trait_list_rda <- vegan::dbrda(formula=marchantiales$comp_list ~ ., data=trait_list_rda_y, distance="euclidean", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+```
+
+Perform stepwise forward variable selection. Please note that result will be slightly different due to the fact we only choose 100 permutations here to speed up the variable selection.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+invisible(
+model_step_trait_list_rda <- ordistep(object=model_0_trait_list_rda, scope=formula(model_1_trait_list_rda), R2scope=TRUE, trace=TRUE, Pin=0.05, Pout=0.1, direction="forward", perm.max=100)
+)
+model_step_trait_list_rda_scores <- vegan::scores(model_step_trait_list_rda)
+```
+
+Compute the dbRDA with selected model by permutation tests in constrained ordination.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_trait_list_rda <- vegan::dbrda(formula=as.formula(model_step_trait_list_rda$terms), data=trait_list_rda_y, distance="euclidean", metaMDSdist=FALSE, add=TRUE, sqrt.dist=FALSE)
+model_trait_list_rda_ef_formula <- update(as.formula(model_step_trait_list_rda$terms), model_trait_list_rda ~ .)
+model_trait_list_rda_ef_factors <- as.factor(sapply(strsplit(as.character(model_trait_list_rda_ef_formula)[[3]], "\\+"), function(x) { x <- gsub("(\\`|^ | $)","",x) }))
+model_trait_list_rda_ef <- envfit(formula=model_trait_list_rda_ef_formula, data=trait_list_rda_y, choices=c(1:2), perm=100)
+model_trait_list_rda_scores <- vegan::scores(model_trait_list_rda, choices=c(1:2))
+```
+
+Goodness of fit statistic: Squared correlation coefficient.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+model_trait_list_rda_fit <- data.frame(r2=c(model_trait_list_rda_ef$vectors$r,model_trait_list_rda_ef$factors$r),
+									   pvals=c(model_trait_list_rda_ef$vectors$pvals,model_trait_list_rda_ef$factors$pvals) )
+rownames(model_trait_list_rda_fit) <- c(names(model_trait_list_rda_ef$vectors$r),names(model_trait_list_rda_ef$factors$r))
+model_trait_list_rda_fit
+```
+
+Plot dbRDA.
+
+```{r, message=FALSE, warning=FALSE, results='hide', fig.keep='all', fig.width=6, fig.height=6, out.width=600, out.height=600}
+par(mfrow=c(1,1), mar=c(4,4,0.1,1), oma=c(0,0,0,0), cex.axis=1, cex=1)
+plot(model_trait_list_rda_scores$sites[,c(1:2)],
+	 xlim=c(min(model_trait_list_rda_scores$sites[,1])-1, max(model_trait_list_rda_scores$sites[,1])+1),
+	 ylim=c(min(model_trait_list_rda_scores$sites[,2]), max(model_trait_list_rda_scores$sites[,2])),
+	 xlab=paste0("dbRDA1 (",round(as.data.frame(summary(model_trait_list_rda)$cont$importance)["Proportion Explained",c(1)]*100,2),"%)"),
+	 ylab=paste0("dbRDA2 (",round(as.data.frame(summary(model_trait_list_rda)$cont$importance)["Proportion Explained",c(2)]*100,2),"%)"),
+	 pch=19, cex=1.4, col=marchantiales$metadata$color, main="")
+plot(model_trait_list_rda_ef, cex=0.75, p.max=1, col="black")
+legend("topleft", bty="n", legend=levels(as.factor(marchantiales$metadata$species)), pch=19, col=levels(as.factor(marchantiales$metadata$color)), pt.cex=0.8, cex=0.7, y.intersp=0.8, text.width=0.1)
+```

@@ -9,8 +9,8 @@ heatmap.selected_features(
   sel_feat,
   sel_names = NULL,
   sample_colors = NULL,
-  filename,
-  main,
+  filename = NULL,
+  main = "",
   scale = "col",
   plot_width = 6,
   plot_height = 5,
@@ -43,4 +43,12 @@ heatmap.selected_features(
 }
 \description{
 Function to draw a heatmap of selected variables
+}
+\examples{
+heatmap.selected_features(feat_list=marchantiales$comp_list,
+sel_feat=select_features_pls(feat_matrix=marchantiales$comp_list,
+                             sel_factor=as.factor(marchantiales$metadata$species),
+                             sel_colors=marchantiales$metadata$color,
+                             components=(nlevels(as.factor(marchantiales$metadata$species))-1))$`_selected_variables_`,
+sample_colors=marchantiales$metadata$color, filename=NULL)
 }

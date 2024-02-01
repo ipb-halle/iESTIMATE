@@ -1,0 +1,30 @@
+#' Marchantiales reference data
+#'
+#' A dataset containing LC-MS data of complex thallose liverworts (order Marchantiales)
+#'
+#' @format A list with 7 data frames
+#' \describe{
+#'   \item{marchantiales$comp_list}{traditional peak matrix with samples in rows and abundances of compounds in columns}
+#'   \item{marchantiales$bina_list}{matrix with samples in rows and presence/absence of compounds in columns}
+#'   \item{marchantiales$uniq_list}{matrix with samples in rows and compounds that are only present in samples in columns}
+#'   \item{marchantiales$class_list}{matrix with samples in rows and counts of classes in columns}
+#'   \item{marchantiales$subclass_list}{matrix with samples in rows and counts of subclasses in columns}
+#'   \item{marchantiales$superclass_list}{matrix with samples in rows and counts of superclasses in columns}
+#'   \item{marchantiales$npclass_list}{matrix with samples in rows and counts of NP classes in columns}
+#'   \item{marchantiales$nppathway_list}{matrix with samples in rows and counts of NP pathways in columns}
+#'   \item{marchantiales$mdes_list}{matrix with samples in rows and molecular descriptors in columns}
+#'   \item{marchantiales$div_classes}{Vector of frequency of classes}
+#'   \item{marchantiales$div_subclasses}{Vector of frequency of subclasses}
+#'   \item{marchantiales$div_superclasses}{Vector of frequency of superclasses}
+#'   \item{marchantiales$div_npclasses}{Vector of frequency of NP classes}
+#'   \item{marchantiales$div_nppathway}{Vector of frequency of NP pathways}
+#'   \item{marchantiales$div_npclasses_samples_pos}{matrix with NP-class information in positive mode}
+#'   \item{marchantiales$div_npclasses_samples_neg}{matrix with NP-class information in neagtive mode}
+#'   \item{marchantiales$model_div}{matrix with samples in rows and calculated molecular diversity measures in columns}
+#'   \item{marchantiales$metadata}{list with metadata information such as sample names, species names, colors}
+#'   \item{marchantiales$phylo_trnLF}{FASTA file with aligned trnLF marker sequences}
+#'   \item{marchantiales$char_list}{matrix with samples in rows and measured morphometric characteristics in columns}
+#'   \item{marchantiales$trait_list}{matrix with samples in rows and traits compiled from TRY in columns}
+#'   ...
+#' }
+"marchantiales"

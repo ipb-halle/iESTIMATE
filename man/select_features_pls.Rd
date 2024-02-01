@@ -11,6 +11,8 @@ select_features_pls(
   components = 2,
   tune_length = 10,
   quantile_threshold = 0.95,
+  keepx_min = 10,
+  keepx_max = 0,
   plot_roc_filename = NULL
 )
 }
@@ -27,8 +29,18 @@ select_features_pls(
 
 \item{quantile_threshold}{confidence level, defaults to 0.95}
 
+\item{keepx_min}{Minimum number of variables to keep for level (defaults to 10)}
+
+\item{keepx_max}{Maximum number of variables to keep for level (defaults to 0, which means no limit)}
+
 \item{plot_roc_filename}{plot metrics to external pdf, defaults to NULL}
 }
 \description{
 Function for variables selection using Partial Least Squares Discriminant Analysis
+}
+\examples{
+select_features_pls(feat_matrix=marchantiales$comp_list,
+sel_factor=as.factor(marchantiales$metadata$species),
+sel_colors=marchantiales$metadata$color,
+components=(nlevels(as.factor(marchantiales$metadata$species))-1))
 }

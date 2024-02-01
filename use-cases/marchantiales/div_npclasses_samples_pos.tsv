@@ -1,0 +1,634 @@
+"R.cavernosa.SWE.1.autoMSMS.pos_P1.B.4_1_7061"	"R.cavernosa.SWE.2.autoMSMS.pos_P1.B.5_1_7119"	"R.cavernosa.SWE.3.autoMSMS.pos_P1.B.6_1_7120"	"R.canaliculata.GOT.1.autoMSMS.pos_P1.C.7_1_7130"	"R.canaliculata.GOT.2.autoMSMS.pos_P1.C.8_1_7131"	"R.canaliculata.GOT.3.autoMSMS.pos_P1.C.9_1_7132"	"R.bifurca.GOT.1.autoMSMS.pos_P1.E.4_1_7145"	"R.bifurca.GOT.2.autoMSMS.pos_P1.E.5_1_7146"	"R.bifurca.GOT.3.autoMSMS.pos_P1.E.6_1_7147"	"R.ciliifera.GOT.1.autoMSMS.pos_P1.D.1_1_7133"	"R.ciliifera.GOT.2.autoMSMS.pos_P1.D.2_1_7134"	"R.ciliifera.GOT.3.autoMSMS.pos_P1.D.3_1_7135"	"R.subbifurca.OE1.1.autoMSMS.pos_P1.D.7_1_7139"	"R.subbifurca.OE1.2.autoMSMS.pos_P1.D.8_1_7140"	"R.subbifurca.OE1.3.autoMSMS.pos_P1.D.9_1_7141"	"R.sorocarpa.SWE.1.autoMSMS.pos_P1.B.7_1_7121"	"R.sorocarpa.SWE.2.autoMSMS.pos_P1.B.8_1_7122"	"R.sorocarpa.SWE.3.autoMSMS.pos_P1.B.9_1_7123"	"R.beyrichiana.OEL.1.autoMSMS.pos_P1.D.4_1_7136"	"R.beyrichiana.OEL.2.autoMSMS.pos_P1.D.5_1_7137"	"R.beyrichiana.OEL.3.autoMSMS.pos_P1.D.6_1_7138"	"R.subbifurca.OE2.1.autoMSMS.pos_P1.E.1_1_7142"	"R.subbifurca.OE2.2.autoMSMS.pos_P1.E.2_1_7143"	"R.subbifurca.OE2.3.autoMSMS.pos_P1.E.3_1_7144"	"R.ciliifera.HAL.1.autoMSMS.pos_P1.E.7_1_7148"	"R.ciliifera.HAL.2.autoMSMS.pos_P1.E.8_1_7149"	"R.ciliifera.HAL.3.autoMSMS.pos_P1.E.9_1_7150"	"R.gougetiana.HAL.1.autoMSMS.pos_P1.F.1_1_7151"	"R.gougetiana.HAL.2.autoMSMS.pos_P1.F.2_1_7152"	"R.gougetiana.HAL.3.autoMSMS.pos_P1.F.3_1_7153"	"R.huebeneriana.GOT.1.autoMSMS.pos_P1.C.1_1_7124"	"R.huebeneriana.GOT.2.autoMSMS.pos_P1.C.2_1_7125"	"R.huebeneriana.GOT.3.autoMSMS.pos_P1.C.3_1_7126"	"A.gracilis.SWE.1.autoMSMS.pos_P1.B.1_1_7058"	"A.gracilis.SWE.2.autoMSMS.pos_P1.B.2_1_7059"	"A.gracilis.SWE.3.autoMSMS.pos_P1.B.3_1_7060"	"R.gothica.GOT.1.autoMSMS.pos_P1.C.4_1_7127"	"R.gothica.GOT.2.autoMSMS.pos_P1.C.5_1_7128"	"R.gothica.GOT.3.autoMSMS.pos_P1.C.6_1_7129"	"M.fragrans.GOT.1.autoMSMS.pos_P1.A.1_1_7049"	"M.fragrans.GOT.2.autoMSMS.pos_P1.A.2_1_7050"	"M.fragrans.GOT.3.autoMSMS.pos_P1.A.3_1_7051"	"R.hemisphaerica.GOT.1.autoMSMS.pos_P1.A.4_1_7052"	"R.hemisphaerica.GOT.2.autoMSMS.pos_P1.A.5_1_7053"	"R.hemisphaerica.GOT.3.autoMSMS.pos_P1.A.6_1_7054"	"A.hyalina.GOT.1.autoMSMS.pos_P1.A.7_1_7055"	"A.hyalina.GOT.2.autoMSMS.pos_P1.A.8_1_7056"	"A.hyalina.GOT.3.autoMSMS.pos_P1.A.9_1_7057"
+"Alkaloids; Anthranilic acid alkaloids; Acridone alkaloids"	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Aminoacids"	1	1	1	1	1	1	1	2	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	0	1	0	1	1	1	0	0	0	0	1	0	2	2	1
+"Alkaloids; Anthranilic acid alkaloids; Benzodiazepine alkaloids"	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Cephalosporins"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Imidazole alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	1
+"Alkaloids; Anthranilic acid alkaloids; Phenylalanine-derived alkaloids"	0	1	0	0	0	0	0	1	0	0	0	0	1	1	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	0	0	1	1	0	0	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Pyridine alkaloids"	0	0	3	2	2	2	3	3	4	3	3	3	3	2	3	1	2	2	1	1	2	2	3	2	1	3	3	2	3	2	0	0	0	1	1	1	4	3	2	1	1	2	1	1	1	0	0	0
+"Alkaloids; Anthranilic acid alkaloids; Quinazoline alkaloids"	2	3	2	3	3	2	3	3	3	2	2	2	3	3	3	2	3	3	4	4	4	1	2	1	2	3	3	2	2	2	3	3	3	3	3	2	3	3	3	0	0	0	1	1	1	0	1	0
+"Alkaloids; Anthranilic acid alkaloids; Quinoline alkaloids"	0	0	0	1	0	0	0	1	1	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	1	1	1	0	1	0	0	0	0
+"Alkaloids; Chromanes; Simple coumarins"	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Diterpenoids; Quinolizidine alkaloids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Diterpenoids; Steroidal alkaloids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0
+"Alkaloids; Eicosanoids; Pyridine alkaloids"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty Acids and Conjugates; Phenylalanine-derived alkaloids"	1	1	0	1	1	1	0	0	0	1	0	0	0	1	1	0	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty acyls; Fatty alcohols"	0	0	0	0	0	0	3	3	3	1	1	1	1	1	1	0	1	0	1	1	1	1	1	0	0	2	2	2	2	2	0	0	0	2	2	0	1	1	0	2	1	0	2	0	0	0	1	0
+"Alkaloids; Fatty acyls; Glycerophosphoethanolamines"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty acyls; Halogenated hydrocarbons"	0	0	1	0	0	0	0	1	1	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty acyls; Linear peptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty acyls; Piperidine alkaloids"	0	1	1	1	1	1	3	3	3	2	2	2	2	2	2	1	2	2	1	2	1	2	2	2	2	2	2	2	2	2	1	1	1	0	0	0	2	2	2	1	0	0	1	0	1	1	0	1
+"Alkaloids; Fatty acyls; Pyridine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0
+"Alkaloids; Fatty acyls; Thiodiketopiperazine alkaloids"	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty amides; N-acyl amines"	1	0	0	1	1	1	0	1	0	1	1	1	0	0	0	0	1	1	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty amides; Primary amides"	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Fatty amides; Pyrrolidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Flavonoids; Chalcones"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Flavonoids; Polyamines"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Flavonoids; Simple phenolic acids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0
+"Alkaloids; Guanidine alkaloids; Acyclic guanidine alkaloids"	0	0	0	1	1	1	1	1	1	0	1	1	0	1	1	1	1	1	0	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Guanidine alkaloids; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1
+"Alkaloids; Guanidine alkaloids; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1
+"Alkaloids; Guanidine alkaloids; Primary amides"	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	1	1	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Guanidine alkaloids; Purine alkaloids"	0	0	0	0	0	0	3	3	3	1	0	2	1	2	2	1	1	1	3	2	2	1	2	2	0	0	0	1	0	0	0	0	0	0	0	0	3	3	2	0	1	1	1	1	1	0	0	0
+"Alkaloids; Guanidine alkaloids; Pyridine alkaloids"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	0	0	1	1	1	1	0	0	1	1	1	0	1	1	1
+"Alkaloids; Guanidine alkaloids; Quinolizidine alkaloids"	1	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	1	0	1	1	1	0	0	1	0	0	0	0	0	1	0	1	0
+"Alkaloids; Guanidine alkaloids; Simple amide alkaloids"	0	0	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0
+"Alkaloids; Guanidine alkaloids; Steroidal alkaloids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Guanidine alkaloids; Tricyclic guanidine alkaloids"	0	0	2	2	2	2	3	2	2	1	2	2	1	1	1	1	2	2	2	1	1	1	2	2	0	3	1	2	2	2	0	0	0	0	1	0	2	2	3	1	1	0	1	0	0	0	0	1
+"Alkaloids; Histidine alkaloids; Cephalosporins"	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1
+"Alkaloids; Histidine alkaloids; Imidazole alkaloids"	3	2	2	3	2	3	3	3	3	4	3	3	2	4	4	2	2	2	2	1	2	2	4	3	1	2	2	2	3	3	2	2	1	3	3	3	3	3	3	1	2	3	3	3	4	2	2	2
+"Alkaloids; Histidine alkaloids; Purine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Histidine alkaloids; Purine nucleostides"	0	1	0	1	1	1	1	1	1	0	0	0	1	0	0	0	1	1	1	1	1	0	0	1	0	1	1	1	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Linear polyketides; Imidazole alkaloids"	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Linear polyketides; Open-chain polyketides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1
+"Alkaloids; Linear polyketides; Pyrrole alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Carbapenems"	0	0	0	0	0	0	2	2	2	1	2	2	1	1	2	0	0	0	1	0	0	0	2	1	0	2	0	0	0	0	0	0	0	0	0	0	2	1	2	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	1	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Corynanthe type"	0	1	0	1	1	1	0	0	0	0	0	1	0	0	0	0	1	1	0	1	1	0	0	0	0	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+"Alkaloids; Lysine alkaloids; Cyanogenic glycosides"	0	0	1	0	0	1	1	1	0	0	1	0	0	1	0	1	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Ergot alkaloids"	0	0	0	1	1	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Imidazole alkaloids"	2	0	0	0	0	0	1	1	1	0	1	1	2	2	2	0	0	1	1	1	1	1	2	2	0	0	0	0	0	0	0	0	0	1	1	1	1	0	1	0	1	1	2	2	2	2	2	1
+"Alkaloids; Lysine alkaloids; Isoquinoline alkaloids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Linear peptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Menthane monoterpenoids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Monocyclic monoterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Lysine alkaloids; N-acyl amines"	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1
+"Alkaloids; Lysine alkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	1	1	1	0	0	1	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0
+"Alkaloids; Lysine alkaloids; Piperidine alkaloids"	2	4	6	6	5	6	11	15	14	6	9	6	12	11	14	7	6	6	12	10	9	10	10	13	8	10	9	8	11	7	6	6	6	4	3	4	16	11	10	1	3	4	3	4	4	3	4	3
+"Alkaloids; Lysine alkaloids; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	1	1	1
+"Alkaloids; Lysine alkaloids; Pregnane steroids"	1	2	1	1	1	1	2	2	2	1	1	1	2	1	1	1	2	2	2	2	2	2	1	1	1	1	1	2	1	1	1	1	1	0	0	1	2	2	1	1	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Pyridine alkaloids"	3	1	0	3	2	4	1	1	1	1	1	1	2	3	2	1	1	1	2	3	2	2	2	2	0	1	1	1	1	1	2	1	0	2	2	1	1	1	1	0	1	1	2	2	2	1	1	1
+"Alkaloids; Lysine alkaloids; Pyrimidine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Pyrrolidine alkaloids"	0	0	0	0	0	1	1	2	1	2	1	1	0	0	0	0	1	0	0	0	0	1	0	2	0	1	1	1	1	1	0	0	0	0	0	0	1	2	2	1	1	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Quinolizidine alkaloids"	8	4	5	2	7	3	9	11	11	7	8	10	9	6	11	4	6	7	7	6	6	6	11	7	6	8	8	9	8	8	4	4	5	8	11	4	12	8	9	2	3	5	11	13	13	10	9	5
+"Alkaloids; Lysine alkaloids; Saxitoxins"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Simple amide alkaloids"	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Steroidal alkaloids"	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Lysine alkaloids; Thiodiketopiperazine alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	1
+"Alkaloids; Lysine alkaloids; Tricyclic guanidine alkaloids"	0	0	0	1	1	1	1	2	2	1	1	1	1	1	2	0	1	1	1	1	1	1	2	2	1	2	1	1	1	1	1	1	1	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Macrolides; Isoquinoline alkaloids"	0	0	1	0	1	0	0	0	0	0	0	0	1	1	1	1	1	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Macrolides; Open-chain polyketides"	0	0	0	1	1	1	1	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	1	0	0	1	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Mitomycin derivatives; Mitomycins"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	1	0
+"Alkaloids; Monoterpenoids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Monoterpenoids; Pinane monoterpenoids"	0	0	1	0	0	0	1	1	1	2	2	2	1	1	2	1	2	1	1	1	1	1	1	1	0	2	3	1	3	2	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Monoterpenoids; Piperidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+"Alkaloids; Monoterpenoids; Pyridine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Monoterpenoids; Terpenoid alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nicotinic acid alkaloids; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nicotinic acid alkaloids; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nicotinic acid alkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nicotinic acid alkaloids; Pyridine alkaloids"	6	7	11	15	15	17	16	21	20	18	18	16	12	13	16	17	13	14	20	17	21	12	16	13	21	24	23	28	25	26	17	16	16	13	11	9	31	20	22	9	8	10	12	16	13	6	7	8
+"Alkaloids; Nicotinic acid alkaloids; Simple indole alkaloids"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nucleosides; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nucleosides; Imidazole alkaloids"	0	0	0	0	0	0	1	1	1	0	1	1	1	1	0	0	0	0	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nucleosides; Polyamines"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Nucleosides; Purine alkaloids"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0
+"Alkaloids; Nucleosides; Purine nucleostides"	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	2	2	0	1	0	0	0	0	1	1	2	1	0	0	0
+"Alkaloids; Nucleosides; Pyrimidine nucleostides"	0	2	0	1	1	1	1	1	1	1	2	1	2	0	1	1	1	1	1	1	1	1	1	1	1	1	1	2	2	2	0	0	0	0	0	0	0	1	1	1	0	1	0	1	1	0	0	0
+"Alkaloids; Oligopeptides; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Oligopeptides; Cyclic peptides"	0	0	1	1	1	2	2	2	2	1	1	2	3	3	2	1	1	1	1	0	0	2	1	3	2	2	2	2	3	3	0	0	0	1	1	1	2	1	3	0	0	0	1	0	1	0	0	0
+"Alkaloids; Oligopeptides; Imidazole alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+"Alkaloids; Oligopeptides; Linear peptides"	0	0	1	0	0	0	2	3	3	2	2	2	2	2	2	2	2	1	2	2	2	2	1	2	2	2	2	2	2	2	0	0	0	0	0	0	1	2	2	0	0	0	0	0	0	0	0	0
+"Alkaloids; Oligopeptides; Open-chain polyketides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+"Alkaloids; Oligopeptides; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Oligopeptides; Purine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Oligopeptides; Pyridine alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	1
+"Alkaloids; Ornithine alkaloids; Aminoacids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Ornithine alkaloids; Cyclic peptides"	0	0	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Dipeptides"	0	0	0	0	0	0	1	1	2	2	2	2	2	2	3	0	0	0	1	0	1	1	2	2	0	1	1	0	0	0	0	0	0	0	0	0	2	1	2	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Fatty alcohols"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Imidazole alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Isoquinoline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Piperidine alkaloids"	2	0	0	1	1	1	3	3	2	1	1	1	1	2	2	1	1	1	1	1	1	3	3	3	1	1	1	2	1	1	0	0	0	1	2	1	2	1	1	0	0	1	0	1	1	1	1	0
+"Alkaloids; Ornithine alkaloids; Polyamines"	7	8	10	16	16	16	18	22	20	16	19	15	18	19	21	11	11	18	23	18	18	19	18	19	29	28	26	31	34	33	18	13	13	15	17	16	18	19	17	8	5	11	29	29	28	11	10	9
+"Alkaloids; Ornithine alkaloids; Pyridine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Pyrimidine nucleostides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Pyrrolidine alkaloids"	0	1	0	0	0	0	0	1	1	0	0	0	0	0	1	1	0	0	0	0	0	0	1	0	0	0	0	2	2	2	1	0	0	0	0	0	1	1	1	0	0	0	1	0	1	1	0	1
+"Alkaloids; Ornithine alkaloids; Quinolizidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+"Alkaloids; Ornithine alkaloids; Tripeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Ornithine alkaloids; Tropane alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	0	1	0
+"Alkaloids; Peptide alkaloids; Aminoacids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Peptide alkaloids; Cephalosporins"	0	0	0	0	0	1	1	1	1	0	1	0	0	0	0	1	0	0	0	0	0	1	1	0	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Peptide alkaloids; Cyclic peptides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	2	2	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	1	1	1	0	0	0
+"Alkaloids; Peptide alkaloids; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	1
+"Alkaloids; Peptide alkaloids; Ergot alkaloids"	0	0	0	1	1	1	1	2	2	2	2	2	1	1	2	0	1	0	1	1	2	1	1	2	1	1	0	2	3	3	0	0	0	0	0	0	1	2	2	0	0	0	0	0	0	0	0	0
+"Alkaloids; Peptide alkaloids; Indole diketopiperazine alkaloids L-Trp, L-Ala"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	2	2	2	0	1	0
+"Alkaloids; Peptide alkaloids; Mycosporine and Mycosporine-like amino acids"	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Peptide alkaloids; Pyridine alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Peptide alkaloids; Simple amide alkaloids"	0	0	0	1	2	2	1	1	2	2	2	2	1	1	2	0	0	0	1	0	0	1	2	2	2	3	3	2	4	2	0	0	0	1	1	1	3	2	3	0	0	0	1	0	0	0	0	0
+"Alkaloids; Peptide alkaloids; Simple diketopiperazine alkaloids"	0	0	0	0	0	0	1	1	0	1	1	1	0	1	1	0	0	1	0	0	0	0	0	1	0	2	1	2	2	2	0	0	0	0	0	0	2	1	1	0	0	0	0	1	0	0	0	0
+"Alkaloids; Phenolic acids C6-C1; Simple phenolic acids"	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Polycyclic aromatic polyketides; Cyclic peptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Polyols; Polyamines"	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Proline alkaloids; Pyrrole alkaloids"	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	1	1	1	1	1	1	1
+"Alkaloids; Pseudoalkaloids transamidation; Open-chain polyketides"	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1
+"Alkaloids; Pseudoalkaloids transamidation; Steroidal alkaloids"	2	1	1	7	7	6	4	4	3	4	4	5	3	4	3	1	4	3	3	3	2	3	2	5	4	4	3	4	2	3	4	3	3	2	2	2	4	5	5	1	1	2	2	2	3	3	2	1
+"Alkaloids; Pseudoalkaloids; Acetate-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Aminoacids"	0	0	0	1	1	1	0	1	0	1	1	1	1	1	2	0	0	0	0	0	0	1	1	1	1	2	2	1	2	1	0	0	0	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Aminoglycosides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	0	1	0	1	1
+"Alkaloids; Pseudoalkaloids; Cephalosporins"	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Cyclic peptides"	1	0	1	0	0	0	1	2	1	1	1	1	1	0	0	0	2	2	1	1	1	1	0	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	0	1	1	1	0	0	0
+"Alkaloids; Pseudoalkaloids; Dipeptides"	0	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	1	1	1	1	1	1	1	1	2	2	2	2	2	2	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Imidazole alkaloids"	0	0	2	1	1	1	3	2	2	2	2	2	1	3	2	1	1	1	2	3	2	2	1	1	2	2	2	2	2	2	1	1	1	0	0	0	3	3	3	2	2	1	2	1	2	2	0	1
+"Alkaloids; Pseudoalkaloids; Linear peptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Phenylalanine-derived alkaloids"	3	1	1	1	1	1	1	1	1	1	1	1	0	1	1	2	1	1	1	1	1	0	0	0	1	1	1	2	2	2	0	0	1	2	2	2	0	0	0	0	0	0	2	1	1	1	1	1
+"Alkaloids; Pseudoalkaloids; Phenylethylamines"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Piperidine alkaloids"	0	0	0	1	1	1	2	2	2	1	2	1	2	3	2	1	1	1	2	1	1	2	2	3	1	2	1	4	4	3	0	0	0	0	1	0	3	2	3	1	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Polyamines"	0	0	0	0	1	1	1	1	1	1	1	1	2	2	1	0	1	1	1	1	2	2	2	2	1	2	1	2	2	2	0	0	0	1	1	1	2	2	1	0	0	0	2	2	3	0	1	0
+"Alkaloids; Pseudoalkaloids; pteridine alkaloids"	1	2	1	5	5	6	4	4	4	1	2	1	2	2	3	2	1	1	1	3	2	1	2	3	3	1	2	1	1	2	2	3	2	1	2	1	5	5	4	3	3	1	5	7	7	2	1	1
+"Alkaloids; Pseudoalkaloids; Purine alkaloids"	7	1	2	7	6	6	9	9	9	8	9	8	12	12	11	3	3	4	10	9	8	11	10	12	4	8	10	11	15	10	5	5	5	7	8	5	11	8	9	2	2	4	9	10	9	6	6	6
+"Alkaloids; Pseudoalkaloids; Purine nucleostides"	2	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	2	1	2	0	0	0	1	1	0	1	1	1	3	3	2	2	1	2	1	2	1	2	2	2	2	2	2
+"Alkaloids; Pseudoalkaloids; Pyridine alkaloids"	1	0	1	4	4	4	2	4	3	2	2	2	3	3	5	2	2	4	2	3	2	2	3	4	1	3	3	6	7	6	3	2	1	2	3	1	5	4	5	2	1	1	4	3	5	1	2	3
+"Alkaloids; Pseudoalkaloids; Pyrimidine nucleostides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Quinazoline alkaloids"	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Quinolizidine alkaloids"	0	1	0	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	1	1	0	1	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Simple indole alkaloids"	0	0	0	1	1	1	1	0	0	0	0	1	0	0	0	1	0	1	1	0	0	1	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	1	0	1	0	0	1
+"Alkaloids; Pseudoalkaloids; Steroidal alkaloids"	2	1	8	11	12	10	9	10	10	9	9	8	8	8	9	9	8	9	10	8	9	8	9	11	9	8	8	8	10	10	10	7	9	1	1	2	8	11	12	1	0	0	0	0	1	1	0	1
+"Alkaloids; Pseudoalkaloids; Tantazoles and mirabazoles"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Tricyclic guanidine alkaloids"	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Pseudoalkaloids; Tripeptides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Serine alkaloids; Thiazole alkaloids"	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	1	0	1
+"Alkaloids; Small peptides; Aminoacids"	1	0	1	4	3	3	5	5	6	6	8	6	9	8	10	3	4	4	7	5	5	7	9	9	4	6	4	5	5	7	2	2	2	1	1	2	6	4	5	2	2	0	1	1	1	2	2	1
+"Alkaloids; Small peptides; Aminoglycosides"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; Cyclic peptides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0
+"Alkaloids; Small peptides; Dipeptides"	0	0	0	0	0	0	3	3	2	3	3	3	2	2	1	0	1	0	2	1	1	1	1	2	3	3	2	6	5	6	0	0	0	1	1	0	1	1	1	0	0	0	1	1	1	1	2	1
+"Alkaloids; Small peptides; Ergot alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; Imidazole alkaloids"	1	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	0	0	1	0	1	0	1	1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; N-acyl amines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; Pinane monoterpenoids"	1	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	1	1	0	1	1	0	0	0	1	1	1	0	1	1
+"Alkaloids; Small peptides; Piperidine alkaloids"	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	2	2	2	0	1	0	0	1	1	2	2	3	1	1	1
+"Alkaloids; Small peptides; Polyamines"	1	0	0	0	0	0	0	1	1	2	2	2	1	2	2	1	1	0	1	1	1	1	2	2	1	1	2	0	0	0	0	0	0	1	1	1	0	1	0	0	0	1	3	3	3	1	1	1
+"Alkaloids; Small peptides; pteridine alkaloids"	0	0	1	2	2	1	1	1	1	1	2	2	3	2	2	0	2	1	2	3	0	1	3	3	1	2	1	2	1	2	0	0	0	0	0	1	0	1	2	2	1	1	0	0	0	0	1	1
+"Alkaloids; Small peptides; Purine alkaloids"	0	0	0	2	3	3	2	2	2	0	0	0	0	2	1	0	0	0	2	2	2	2	1	1	1	2	2	4	4	4	0	0	0	1	0	1	2	2	2	0	0	0	1	1	1	0	0	0
+"Alkaloids; Small peptides; Purine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	0	0
+"Alkaloids; Small peptides; Pyridine alkaloids"	1	0	1	1	1	1	1	1	1	0	0	0	1	2	2	0	0	0	0	0	0	2	1	1	1	1	2	2	3	2	1	1	1	2	2	2	2	2	2	0	1	1	1	1	1	1	1	1
+"Alkaloids; Small peptides; Pyrimidine nucleostides"	0	0	0	0	1	1	1	1	1	0	0	0	0	1	0	1	2	1	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Small peptides; Quinolizidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	1
+"Alkaloids; Small peptides; Simple amide alkaloids"	1	0	0	1	1	1	1	2	1	2	2	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	2	3	2	2	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0
+"Alkaloids; Small peptides; Tripeptides"	0	0	1	1	1	1	2	2	2	3	2	3	2	3	2	1	1	1	0	0	0	2	2	4	2	2	2	2	2	2	1	1	0	0	1	0	2	3	3	0	0	0	0	0	0	0	0	0
+"Alkaloids; Sphingolipids; Steroidal alkaloids"	0	0	0	1	1	1	1	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Steroids; Linear peptides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Steroids; Pregnane steroids"	0	0	0	0	0	0	0	1	1	1	0	1	0	0	1	0	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	1	2	1	0	0	1	1	1	1	0	0	0
+"Alkaloids; Steroids; Steroidal alkaloids"	0	0	0	1	1	1	1	1	1	0	1	0	1	1	1	0	1	0	0	1	0	1	0	1	0	0	0	1	1	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Triterpenoids; Steroidal alkaloids"	0	0	1	0	0	0	0	0	1	0	1	1	0	0	1	0	1	1	1	0	1	0	0	1	1	0	0	1	1	1	0	0	0	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Acridone alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Alkaloids; Tryptophan alkaloids; Ansa macrolides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Ansa peptide alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Aspidosperma type"	0	2	4	5	3	3	4	2	4	4	5	4	4	4	3	4	2	4	2	2	3	3	2	5	5	5	4	4	3	4	1	1	1	0	2	0	3	2	4	1	0	0	0	0	0	1	0	1
+"Alkaloids; Tryptophan alkaloids; Aspidosperma-Iboga hybrid type Vinca alkaloids"	0	0	0	0	0	0	1	1	1	0	1	0	0	0	1	0	0	0	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Carbazole alkaloids"	0	2	2	3	3	3	1	1	1	3	1	2	2	2	3	2	2	1	3	2	3	2	3	2	1	1	1	4	5	4	2	2	1	0	0	0	4	2	3	1	0	0	0	0	1	0	1	0
+"Alkaloids; Tryptophan alkaloids; Carboline alkaloids"	1	1	3	2	3	2	4	3	4	3	4	4	6	6	6	5	6	8	4	4	4	7	8	7	6	6	5	6	7	6	3	2	2	3	2	1	7	5	6	1	1	2	4	4	4	1	2	1
+"Alkaloids; Tryptophan alkaloids; Cephalosporins"	1	2	1	2	2	1	2	2	1	3	3	3	1	2	2	0	0	0	3	3	3	1	0	1	2	3	3	1	2	3	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1
+"Alkaloids; Tryptophan alkaloids; Chromones"	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Corynanthe type"	0	0	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Cyclic peptides"	2	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	1	0	0	1	0	0	0	1	0	0	0	3	2	2	0	0	0	0	2	2	1	1	1	2	1	1
+"Alkaloids; Tryptophan alkaloids; Dipeptides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	1	0	0	1	0	0	0	0	0	1	1	1	1	0	1	1	0	0	0	1	1	0	1	0	1	0	0	0	1	1	1	0	0	0
+"Alkaloids; Tryptophan alkaloids; Ergot alkaloids"	0	0	1	1	2	2	2	2	2	1	1	1	2	2	2	0	2	1	1	1	2	2	0	2	1	1	1	2	1	2	0	0	0	0	0	0	1	2	2	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Hapalindole alkaloids"	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	1	0	1	0	1	1	0	1	1	1	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Imidazole alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	2	1	0	0	0	0	0	0	3	3	3	0	0	0
+"Alkaloids; Tryptophan alkaloids; Indole diketopiperazine alkaloids L-Trp, L-Pro"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1
+"Alkaloids; Tryptophan alkaloids; Indole-Diterpenoid alkaloids Penitrems"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Isoquinoline alkaloids"	0	0	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	2	2	2	2	0	0	0	0	0	0	1	1	2	2	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Limonoids"	1	1	1	1	0	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	1	0	0	1	1	1	0	1	1	1	1	1	0	1
+"Alkaloids; Tryptophan alkaloids; Phenazine alkaloids"	0	1	0	1	1	1	1	1	1	1	0	1	1	1	1	1	0	1	1	1	0	1	1	0	0	0	0	0	0	0	1	0	1	0	0	0	1	1	0	0	1	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Phenylalanine-derived alkaloids"	0	0	0	2	1	2	1	1	2	2	2	2	2	1	0	0	2	1	2	1	1	2	2	1	0	2	2	1	1	1	0	0	0	0	0	0	1	1	1	0	1	1	1	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Prenyl quinone meroterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+"Alkaloids; Tryptophan alkaloids; Prodigiosins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Purine alkaloids"	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Pyridine alkaloids"	2	2	3	3	4	2	8	7	8	7	6	5	7	8	8	4	7	8	5	4	4	6	6	8	4	7	7	5	6	6	4	2	3	6	6	1	8	8	7	1	2	2	2	2	3	4	1	2
+"Alkaloids; Tryptophan alkaloids; Pyrimidine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Quinazoline alkaloids"	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	2	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Quinoline alkaloids"	1	1	1	1	2	2	3	2	1	3	3	3	3	3	3	2	1	1	0	1	1	3	2	3	2	2	3	3	3	2	2	2	2	0	0	0	4	2	2	0	1	0	0	0	0	0	1	1
+"Alkaloids; Tryptophan alkaloids; Quinolizidine alkaloids"	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1
+"Alkaloids; Tryptophan alkaloids; Simple amide alkaloids"	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Simple coumarins"	0	0	0	2	2	2	0	1	1	0	0	0	0	0	0	0	0	1	1	1	1	0	1	1	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Simple indole alkaloids"	0	3	2	3	1	1	2	2	1	6	4	4	2	4	3	2	2	2	4	2	2	3	4	3	4	4	5	5	5	5	2	3	3	0	0	0	4	3	3	2	2	2	1	3	1	1	1	1
+"Alkaloids; Tryptophan alkaloids; Simple oxindole alkaloids"	0	0	0	0	0	0	1	1	1	0	2	0	0	0	1	0	1	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Steroidal alkaloids"	0	4	4	5	5	5	5	4	5	6	4	6	4	4	5	4	5	3	5	4	5	5	6	6	7	6	5	3	5	4	4	4	5	0	0	0	4	5	4	1	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Tetrahydroisoquinoline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tryptophan alkaloids; Tripeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tyrosine alkaloids; Betalain alkaloids"	0	0	0	1	1	1	0	1	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tyrosine alkaloids; Isoquinoline alkaloids"	0	0	1	3	4	3	3	4	2	1	1	1	1	2	1	0	0	1	1	1	1	2	2	4	2	2	2	3	2	3	2	0	1	0	0	0	2	3	2	1	1	0	0	0	0	0	0	0
+"Alkaloids; Tyrosine alkaloids; p-Terphenyls"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Alkaloids; Tyrosine alkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	1	0	0	0	1	1	1	0	0	0
+"Alkaloids; Tyrosine alkaloids; Phenylethylamines"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0
+"Alkaloids; Tyrosine alkaloids; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0
+"Alkaloids; β-lactams; Cephalosporins"	0	0	0	1	1	1	0	1	1	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Amino acid glycosides; Cyanogenic glycosides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Amino acid glycosides; Glucosinolates"	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	1	0	0
+"Amino acids and Peptides; Aminosugars and aminoglycosides; Linear peptides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	1	0	0	0	1	0	1
+"Amino acids and Peptides; Anthranilic acid alkaloids; Aminoacids"	0	1	0	0	0	0	0	0	1	0	0	0	0	1	1	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Coumarins; Pyrimidine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Fatty amides; N-acyl amines"	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Linear polyketides; Open-chain polyketides"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Linear polyketides; Polyene macrolides"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Lysine alkaloids; Aminoacids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0
+"Amino acids and Peptides; Lysine alkaloids; Carbapenems"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Lysine alkaloids; Dipeptides"	1	0	0	1	1	1	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Lysine alkaloids; Lipopeptides"	0	0	0	0	0	0	0	1	1	1	1	1	0	0	1	0	0	1	0	0	0	1	0	1	1	1	1	0	1	0	1	1	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Lysine alkaloids; Simple diketopiperazine alkaloids"	0	0	0	0	0	0	1	1	1	0	1	1	0	1	0	0	0	0	1	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Macrolides; Tripeptides"	0	0	0	0	0	0	1	1	1	0	0	1	1	1	1	0	0	0	0	0	0	1	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Monoterpenoids; Pinane monoterpenoids"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Mycosporine derivatives; Mycosporine and Mycosporine-like amino acids"	0	0	0	0	0	0	2	1	1	0	1	1	1	0	1	0	0	0	1	0	1	0	1	1	0	2	0	1	0	0	0	0	0	0	0	0	2	1	1	0	0	0	0	0	1	0	0	0
+"Amino acids and Peptides; Nicotinic acid alkaloids; Linear peptides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Nicotinic acid alkaloids; Pyridine alkaloids"	0	0	0	1	1	0	1	2	2	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0
+"Amino acids and Peptides; Nucleosides; Aminoacids"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Nucleosides; Carbapenems"	0	0	0	0	0	0	1	1	1	1	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Nucleosides; Linear peptides"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	2	2	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Nucleosides; Purine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Nucleosides; Pyrimidine nucleostides"	0	1	1	1	2	1	2	2	2	2	2	2	1	1	1	1	2	2	1	1	1	1	2	1	2	2	2	3	3	2	1	1	1	0	0	0	1	1	1	2	2	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Aminoglycosides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	0	0	0	0	1	1	1	0	1	1	1
+"Amino acids and Peptides; Oligopeptides; Carbapenems"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Cholane steroids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Amino acids and Peptides; Oligopeptides; Cyclic peptides"	28	5	22	40	44	44	46	49	44	44	47	45	45	44	40	37	39	41	37	35	35	46	34	49	47	49	47	61	58	59	28	23	20	29	29	24	40	47	44	23	29	27	30	28	28	28	23	26
+"Amino acids and Peptides; Oligopeptides; Depsipeptides"	3	1	2	3	3	3	3	2	4	4	4	4	3	3	3	3	3	3	3	3	3	3	3	3	3	3	3	4	5	4	2	2	2	2	2	2	3	3	3	1	2	2	3	1	2	2	3	3
+"Amino acids and Peptides; Oligopeptides; Linear peptides"	9	3	5	9	12	10	17	16	16	11	13	12	15	12	14	7	11	12	16	13	16	14	12	16	15	14	13	17	20	16	7	6	8	10	9	5	14	18	20	3	8	9	13	11	10	11	8	8
+"Amino acids and Peptides; Oligopeptides; Lipopeptides"	2	0	1	0	1	1	2	3	2	3	3	3	2	2	3	2	3	3	1	1	1	2	1	2	2	2	2	3	4	4	0	1	0	2	2	2	4	4	4	0	1	0	1	1	1	2	2	1
+"Amino acids and Peptides; Oligopeptides; N-acyl amines"	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Open-chain polyketides"	0	0	1	1	2	1	2	2	1	1	2	0	1	2	2	2	2	1	1	0	1	2	1	2	0	1	1	0	2	1	1	0	1	0	0	0	2	1	2	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Phenylalanine-derived alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1	0	0
+"Amino acids and Peptides; Oligopeptides; Piperidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	1	1	1	1	1	1	0	1	1
+"Amino acids and Peptides; Oligopeptides; Polyamines"	0	0	0	1	1	1	0	1	0	0	0	1	1	1	1	0	0	1	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Purine nucleostides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	1	1	1	0	0	0	2	1	1	1	1	1	2	1	2
+"Amino acids and Peptides; Oligopeptides; Quinolizidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	1	1	1
+"Amino acids and Peptides; Oligopeptides; RiPPs-Cyanobactins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Oligopeptides; Tripeptides"	1	0	1	2	2	2	1	1	1	0	0	0	2	1	1	0	0	0	0	1	0	1	1	2	0	0	0	1	1	0	0	0	0	1	1	0	0	1	0	0	0	0	1	1	1	1	0	0
+"Amino acids and Peptides; Ornithine alkaloids; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Amino acids and Peptides; Ornithine alkaloids; Aminoglycosides"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Ornithine alkaloids; Polyamines"	0	0	0	0	0	0	1	1	1	0	0	1	0	0	0	0	1	1	1	1	1	0	0	0	1	1	1	2	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0
+"Amino acids and Peptides; Ornithine alkaloids; Tripeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Indole diketopiperazine alkaloids L-Trp, L-Ala"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Polyene macrolides"	0	0	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Quinazoline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Simple amide alkaloids"	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Thiodiketopiperazine alkaloids"	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0
+"Amino acids and Peptides; Peptide alkaloids; Tripeptides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Pseudoalkaloids; Aminoacids"	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	1	0	0	1	1	0	1	0
+"Amino acids and Peptides; Pseudoalkaloids; Halogenated hydrocarbons"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	1	1	1	0	1	1	1	1	1
+"Amino acids and Peptides; Pseudoalkaloids; Purine nucleostides"	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Aminoacids"	15	20	20	31	33	31	45	52	49	37	43	40	40	46	51	33	43	39	45	39	43	38	45	48	40	44	43	44	48	44	31	27	23	18	21	11	56	48	51	19	19	20	18	26	17	11	19	11
+"Amino acids and Peptides; Small peptides; Aminoglycosides"	0	0	0	0	0	1	1	1	1	2	2	2	2	2	2	1	0	0	2	2	2	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Antimycins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Carbapenems"	0	0	1	1	2	2	1	0	1	0	1	0	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	0	2	3	0	1	1	1	0	0	0	1	1	2	2	2	1
+"Amino acids and Peptides; Small peptides; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Cephalosporins"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	1	1	1	1	1	1
+"Amino acids and Peptides; Small peptides; Cyclic peptides"	1	0	0	2	3	2	3	3	3	4	3	3	1	2	0	0	0	2	1	2	1	1	1	3	4	4	4	2	4	1	3	3	3	2	1	1	5	3	4	0	0	0	2	2	2	1	1	1
+"Amino acids and Peptides; Small peptides; Depsipeptides"	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	1	1	1	1	1	0	0
+"Amino acids and Peptides; Small peptides; Dipeptides"	3	11	7	18	16	20	34	38	38	30	32	31	27	33	35	12	17	18	28	25	28	26	29	31	24	31	30	30	38	30	10	6	6	8	9	7	49	38	41	4	4	2	8	8	9	4	4	2
+"Amino acids and Peptides; Small peptides; Glucosinolates"	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Imidazole alkaloids"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Indole diketopiperazine alkaloids L-Trp, L-Pro"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Linear peptides"	2	0	1	1	1	1	1	1	1	1	1	1	1	1	2	0	1	1	0	0	0	1	0	1	2	2	1	1	1	1	0	0	0	1	2	2	3	1	1	0	1	2	2	2	3	2	2	2
+"Amino acids and Peptides; Small peptides; Mycosporine and Mycosporine-like amino acids"	0	0	0	0	0	0	1	1	1	1	1	1	0	0	1	0	0	0	1	1	1	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; N-acyl amines"	3	0	1	1	1	1	1	3	2	3	2	3	1	1	2	2	2	4	1	1	0	1	2	2	2	2	2	2	2	2	1	0	0	1	1	1	3	1	2	0	0	0	1	1	1	2	2	2
+"Amino acids and Peptides; Small peptides; Open-chain polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Pinane monoterpenoids"	1	0	1	3	3	3	2	2	2	3	3	3	1	2	1	1	1	1	2	1	2	2	1	1	1	0	1	2	2	2	0	0	0	1	1	0	2	2	2	1	0	0	2	0	1	0	1	0
+"Amino acids and Peptides; Small peptides; Piperidine alkaloids"	0	1	2	2	3	3	2	2	2	2	2	3	4	4	4	2	3	3	2	3	2	2	1	3	4	3	3	4	4	4	2	2	2	1	1	0	2	2	2	1	1	0	1	1	1	0	0	0
+"Amino acids and Peptides; Small peptides; Polyamines"	0	4	4	3	4	3	3	3	3	2	2	2	2	3	3	2	2	4	4	4	2	3	3	4	2	2	2	2	2	2	2	2	3	1	1	1	6	5	6	0	1	0	0	1	2	0	1	0
+"Amino acids and Peptides; Small peptides; pteridine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Purine alkaloids"	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	1	1	0	0	0	1	1	0	0	0	0	0	0	1	0	0	1	1	1	1
+"Amino acids and Peptides; Small peptides; Purine nucleostides"	0	1	1	3	3	3	3	3	1	1	1	1	2	2	2	1	1	2	2	1	2	2	2	2	1	2	2	3	2	2	2	2	2	0	0	0	1	2	1	1	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Pyrimidine nucleostides"	0	1	1	1	1	1	2	2	2	0	0	0	1	1	2	0	0	0	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	2	1	1	0	0	0	0	0	1	0	0	0
+"Amino acids and Peptides; Small peptides; Pyrrolidine alkaloids"	0	0	0	0	0	0	2	2	2	1	2	2	1	1	2	0	0	0	2	1	1	0	2	2	0	2	0	0	1	0	0	0	0	0	0	0	2	1	2	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Quinolizidine alkaloids"	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1	1	1	1	0	0	1	0	0	0	0	0	0	1	1	0	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Saxitoxins"	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	1	0	1	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Simple amide alkaloids"	0	0	0	0	0	0	1	2	2	1	1	1	0	1	1	0	0	0	1	1	1	1	0	1	1	1	1	2	2	2	1	1	1	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Small peptides; Tripeptides"	7	4	6	21	23	23	24	27	25	24	25	24	20	27	29	13	18	21	21	22	20	23	26	29	23	26	26	23	27	27	17	14	15	8	10	4	34	24	28	3	2	8	12	12	15	8	7	6
+"Amino acids and Peptides; Steroids; Cyclic peptides"	0	0	0	0	0	0	0	0	1	1	1	1	0	0	1	0	0	1	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; Tryptophan alkaloids; Depsipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	1	0	0	0
+"Amino acids and Peptides; Tyrosine alkaloids; Phenylethylamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0
+"Amino acids and Peptides; β-lactams; Carbapenems"	0	1	1	0	0	0	1	1	3	0	1	1	0	0	1	0	0	0	2	0	1	1	1	0	0	0	0	2	3	2	0	0	0	0	1	0	3	1	2	1	1	1	1	1	2	0	0	0
+"Amino acids and Peptides; β-lactams; Cephalosporins"	4	5	4	2	3	3	4	3	3	0	1	1	4	3	3	3	2	1	4	3	3	2	3	2	3	4	3	2	2	2	0	0	0	11	11	9	2	1	3	1	2	1	3	3	6	2	1	2
+"Amino acids and Peptides; β-lactams; Chalcones"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; β-lactams; Penicillins"	0	1	1	1	2	2	1	0	1	0	1	1	1	1	1	0	1	1	1	1	1	1	1	1	2	2	2	2	2	2	1	1	0	0	0	0	1	1	1	0	0	0	2	2	2	0	0	0
+"Amino acids and Peptides; β-lactams; Piperidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Amino acids and Peptides; β-lactams; Thiodiketopiperazine alkaloids"	0	0	0	0	0	0	2	2	2	0	0	0	2	2	2	0	1	0	2	2	2	2	1	2	0	0	0	0	0	0	0	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Aminosugars and aminoglycosides; Aminoglycosides"	2	1	1	1	2	2	3	3	3	2	2	2	7	5	7	2	2	1	2	2	3	7	7	7	3	4	3	2	3	2	1	0	0	2	1	0	3	3	3	0	0	1	1	1	1	1	0	0
+"Carbohydrates; Aminosugars and aminoglycosides; Aminosugars"	1	0	0	1	1	1	1	1	1	2	2	2	1	1	1	1	1	1	1	1	1	1	0	1	1	2	2	1	2	2	2	2	2	1	1	1	1	1	1	1	1	1	2	2	2	1	1	1
+"Carbohydrates; Fatty amides; Amino cyclitols"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Fatty esters; Purine nucleostides"	0	0	0	1	1	1	1	1	1	1	1	1	0	1	0	1	0	0	1	1	1	0	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Nucleosides; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Nucleosides; Polysaccharides"	0	0	0	1	1	0	1	1	1	0	0	0	0	1	0	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0
+"Carbohydrates; Nucleosides; pteridine alkaloids"	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0
+"Carbohydrates; Nucleosides; Purine nucleostides"	3	3	3	7	7	6	5	4	4	4	3	5	7	5	6	4	4	4	4	6	4	8	7	7	6	7	7	10	7	5	4	1	1	7	9	5	4	4	4	0	2	3	5	5	5	3	4	3
+"Carbohydrates; Nucleosides; Pyrimidine nucleostides"	3	1	1	10	10	10	3	3	1	4	3	2	3	4	4	4	4	4	2	2	1	4	5	3	2	3	4	4	2	3	1	1	1	6	6	5	4	3	4	1	1	2	2	4	2	2	2	1
+"Carbohydrates; Nucleosides; Tripeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Oligopeptides; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0
+"Carbohydrates; Ornithine alkaloids; Mycosporine and Mycosporine-like amino acids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	1
+"Carbohydrates; Ornithine alkaloids; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Polyols; Amino cyclitols"	0	0	1	1	1	1	3	3	3	1	2	1	3	3	3	2	1	1	3	3	3	3	2	3	1	1	1	3	3	4	0	0	0	1	1	0	4	2	2	1	0	0	0	0	0	0	0	0
+"Carbohydrates; Polyols; Aminoglycosides"	0	0	1	2	1	1	3	2	2	4	3	4	1	2	1	1	2	3	2	2	1	1	1	2	4	4	3	4	5	4	0	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Pseudoalkaloids; Purine nucleostides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Saccharides; Disaccharides"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Saccharides; Monosaccharides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Saccharides; Polysaccharides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Small peptides; Aminoacids"	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Small peptides; Aminoglycosides"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Small peptides; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0
+"Carbohydrates; Small peptides; N-acyl amines"	0	0	0	1	1	1	0	1	1	1	1	1	0	0	0	0	0	1	0	0	0	0	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Small peptides; Purine nucleostides"	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Carbohydrates; Small peptides; Pyrimidine nucleostides"	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	1	1	0	0	0	1	1	0	0	1	0	1	0	0	0	0	1	1	0	0
+"Fatty acids; Cyclic polyketides; Macrolide lactones"	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Diterpenoids; Halogenated hydrocarbons"	0	0	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1	1	0	0	0	0	0	1	1	1	1	1	1	1	1	0	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Diterpenoids; Monocyclic guanidine alkaloids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Diterpenoids; Sphingoid bases"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1	0	1	0
+"Fatty acids; Eicosanoids; N-acyl amines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	0	1	0	0	0	0
+"Fatty acids; Eicosanoids; Pregnane steroids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0
+"Fatty acids; Eicosanoids; Prostaglandins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Amino fatty acids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Branched fatty acids"	0	0	1	1	1	1	1	2	1	2	1	1	1	0	1	0	1	2	2	1	2	0	0	1	1	1	2	2	2	1	2	1	1	0	0	0	1	1	2	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Dicarboxylic acids"	1	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1
+"Fatty acids; Fatty Acids and Conjugates; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Fatty alcohols"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Hydroxy fatty acids"	0	1	1	1	1	1	0	0	0	0	0	0	1	1	0	0	1	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Hydroxy-hydroperoxyeicosatetraenoic acids"	0	0	0	0	0	0	1	1	1	0	0	1	0	0	1	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Open-chain polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Polyamines"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty Acids and Conjugates; Unsaturated fatty acids"	0	1	1	0	0	0	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	1	1	1	0	1	0	0	1	0
+"Fatty acids; Fatty Acids and Conjugates; Wax monoesters"	1	0	0	0	1	1	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	1	1	0	0	1	0	0	0	0	0	1	1	2	1	1	0	0	0	1	1	1	1	1	1	1
+"Fatty acids; Fatty acyl glycosides; Fatty acyl glycosides of mono- and disaccharides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	1	0	0	0	0	1	1	0	1	1	2	2
+"Fatty acids; Fatty acyls; Aminoacids"	0	0	1	1	0	1	0	0	0	1	1	0	0	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty acyls; Fatty alcohols"	3	4	8	7	6	7	7	8	9	8	8	7	7	8	8	10	6	7	10	9	8	9	8	9	5	6	8	5	5	6	8	6	6	3	3	2	9	9	9	4	3	4	6	8	10	5	4	4
+"Fatty acids; Fatty acyls; Fatty aldehydes"	1	2	2	1	3	1	2	3	2	1	1	1	3	2	3	0	2	1	4	3	4	2	2	3	2	3	2	2	1	1	2	1	1	1	1	1	3	3	3	2	1	0	0	1	1	1	1	1
+"Fatty acids; Fatty acyls; Halogenated hydrocarbons"	0	2	1	2	2	2	2	2	2	2	1	2	1	2	1	2	1	1	1	1	1	1	1	1	2	2	2	2	0	2	1	1	1	1	0	0	0	2	1	2	2	2	2	1	1	0	0	1
+"Fatty acids; Fatty acyls; Hydrocarbons"	0	2	5	5	6	6	6	7	6	5	4	5	8	5	7	5	5	4	7	6	6	8	6	7	7	5	5	6	6	5	4	3	3	2	2	2	5	6	5	2	3	2	3	5	4	0	1	1
+"Fatty acids; Fatty acyls; Polyamines"	0	1	0	1	1	0	0	1	0	1	0	0	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	2	0	0	0	3	4	3	1	1	1	1	1	1	0	1	0	0	1	0
+"Fatty acids; Fatty amides; Ceramides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	1	0	0
+"Fatty acids; Fatty amides; Leukotrienes"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty amides; N-acyl amines"	2	0	0	2	2	2	2	1	1	1	2	1	1	1	1	1	1	1	0	0	0	1	1	2	1	2	2	2	2	2	1	1	1	1	1	0	3	2	2	0	0	0	2	4	3	1	1	1
+"Fatty acids; Fatty amides; Open-chain polyketides"	1	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0	1	0	0
+"Fatty acids; Fatty amides; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty esters; Fatty acyl carnitines"	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	0	1	1	1	1	1	1
+"Fatty acids; Fatty esters; Fatty acyl CoAs"	0	0	0	1	1	1	0	0	0	3	2	2	0	1	0	0	0	0	0	0	0	1	0	1	2	2	2	3	3	3	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	2	1
+"Fatty acids; Fatty esters; Hydroxy fatty acids"	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty esters; Open-chain polyketides"	1	1	0	1	1	2	0	0	0	2	2	2	1	0	0	0	0	0	1	1	0	1	1	1	2	1	2	2	2	2	0	1	0	0	0	0	1	0	1	1	2	1	2	3	2	0	0	1
+"Fatty acids; Fatty esters; Pinane monoterpenoids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	1	1	1	1	1	1
+"Fatty acids; Fatty esters; Unsaturated fatty acids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Fatty esters; Wax monoesters"	1	0	1	0	0	1	1	1	2	2	1	2	1	1	2	2	1	1	2	1	2	1	2	3	1	2	1	2	2	2	0	0	0	0	1	0	3	2	1	0	1	0	0	0	0	0	0	1
+"Fatty acids; Glycerolipids; Diacylglycerols"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	1	0	0	0	1	1	1	0	0	1	1	1	1	0	0	0
+"Fatty acids; Glycerophospholipids; Glycerophosphates"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	1	0	0	1	0	0	0	0	0	0	1	1	1	0	1	0
+"Fatty acids; Glycerophospholipids; Glycerophosphocholines"	1	0	1	2	2	2	1	1	0	1	1	1	2	0	1	1	1	1	1	1	1	1	1	0	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	2	1	0	0	0	1	1	0	0
+"Fatty acids; Glycerophospholipids; Glycerophosphoethanolamines"	2	2	3	4	5	4	5	5	5	7	5	5	4	4	6	3	3	4	4	5	5	4	4	5	6	8	8	7	6	7	3	3	3	1	2	1	4	5	5	1	1	1	1	1	3	2	1	1
+"Fatty acids; Glycerophospholipids; Glycerophosphoinositols"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Glycerophospholipids; Glycerophosphoserines"	0	0	0	1	1	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Glycerophospholipids; N-acyl amines"	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Glycerophospholipids; Oxidized glycerophospholipids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Linear polyketides; Fatty acyl carnitines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0
+"Fatty acids; Linear polyketides; Open-chain polyketides"	1	0	1	2	2	2	2	1	1	1	2	1	1	1	3	1	1	1	2	1	1	1	2	1	2	3	3	2	2	2	2	1	1	1	2	0	3	3	3	0	0	1	1	2	1	1	1	2
+"Fatty acids; Linear polyketides; Oxo fatty acids"	0	0	0	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Lysine alkaloids; Acetate-derived alkaloids"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Lysine alkaloids; N-acyl amines"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Fatty acids; Lysine alkaloids; Piperidine alkaloids"	1	0	1	1	1	1	1	1	0	1	1	0	1	1	1	1	1	0	0	0	1	2	1	1	0	0	1	1	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+"Fatty acids; Macrolides; Erythromycins"	0	0	0	1	1	1	0	0	0	0	1	0	0	1	1	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	0	1	1	0	0	0
+"Fatty acids; Monoterpenoids; Fatty alcohols"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Monoterpenoids; Jasmonic acids"	0	0	0	0	0	0	1	1	1	1	1	1	0	0	1	0	0	0	1	0	1	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Monoterpenoids; Menthane monoterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Monoterpenoids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Monoterpenoids; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+"Fatty acids; Monoterpenoids; Simple aromatic polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Nucleosides; Pyrimidine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Oligopeptides; Lipopeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0
+"Fatty acids; Oligopeptides; Polyamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Ornithine alkaloids; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	1	0	0	1	0	1	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Ornithine alkaloids; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Ornithine alkaloids; Polyamines"	3	0	0	3	3	3	2	2	2	2	2	2	3	3	3	1	2	2	2	2	2	3	3	3	3	3	3	2	2	2	2	2	2	3	4	3	2	2	2	1	1	2	4	4	4	2	2	2
+"Fatty acids; Phenolic acids C6-C1; Simple phenolic acids"	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	0	1	1	1	1	1	1	0	0	0	1	1	0	1	1	1	0	0	0	0	0	0	1	0	0
+"Fatty acids; Phenylpropanoids C6-C3; Cinnamic acids and derivatives"	0	1	0	0	1	0	1	1	1	0	1	0	1	1	0	0	1	0	1	0	1	1	1	1	1	1	1	0	1	1	0	1	1	0	0	0	1	0	1	0	1	0	0	0	0	0	0	0
+"Fatty acids; Pseudoalkaloids transamidation; Ceramides"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Pseudoalkaloids transamidation; N-acyl amines"	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Pseudoalkaloids transamidation; Steroidal alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Pseudoalkaloids; Steroidal alkaloids"	0	1	1	1	1	1	3	3	3	3	3	2	2	3	3	1	2	1	2	2	2	2	2	3	2	2	2	2	2	2	2	2	2	0	0	0	3	3	3	0	0	0	0	0	0	0	0	0
+"Fatty acids; Saccharides; Monosaccharides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	1	1	1
+"Fatty acids; Small peptides; Aminoacids"	0	1	0	1	0	1	0	1	0	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	1	1	0	0	0	0	0
+"Fatty acids; Small peptides; Polyamines"	0	0	0	0	0	0	1	1	1	1	1	1	0	1	0	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	2	1	0	0	1	1	1	1	1	1	0
+"Fatty acids; Sphingolipids; Ceramides"	0	2	2	4	4	4	4	3	3	3	3	2	3	4	2	2	2	2	3	3	2	3	2	3	2	2	2	2	2	2	2	2	2	0	0	0	3	3	3	0	0	0	0	0	0	0	0	0
+"Fatty acids; Sphingolipids; Cholane steroids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	1	1	0	1	1	1
+"Fatty acids; Sphingolipids; Glycerophosphocholines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Fatty acids; Sphingolipids; Macrotetrolides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1
+"Fatty acids; Sphingolipids; N-acyl amines"	1	0	1	0	1	0	0	1	0	1	0	0	1	1	1	1	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	1	2	1	1	1	0	0
+"Fatty acids; Sphingolipids; Neutral glycosphingolipids"	1	0	0	2	0	2	1	4	3	1	4	4	2	2	1	0	0	0	3	4	4	0	2	1	3	2	3	3	4	2	1	0	0	1	1	1	0	0	2	0	0	1	2	1	2	2	4	3
+"Fatty acids; Sphingolipids; Open-chain polyketides"	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+"Fatty acids; Sphingolipids; Sphingoid bases"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0
+"Fatty acids; Sphingolipids; Unsaturated fatty acids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	1	1	1	1	1	1
+"Fatty acids; Steroids; Fatty alcohols"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Fatty acids; Steroids; Open-chain polyketides"	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	1	0	2	2
+"Fatty acids; Steroids; Pregnane steroids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Polyketides; Aromatic polyketides; Simple aromatic polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Chromanes; Azaphilones"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Chromanes; Chromones"	0	0	0	1	1	1	0	0	0	0	0	0	1	1	0	0	0	0	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Coumarins; Simple coumarins"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; 2-pyrone derivatives"	1	0	0	3	3	3	0	0	0	1	2	2	1	1	1	1	1	2	0	0	0	1	1	1	3	3	3	3	3	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Benzoquinones"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Cinnamic acids and derivatives"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Iridoids monoterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Lactones"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Miscellaneous polyketides"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Phthalide derivatives"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Cyclic polyketides; Simple phenolic acids"	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Diphenyl ethers DPEs; Fungal DPEs"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Diterpenoids; Open-chain polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1
+"Polyketides; Fatty Acids and Conjugates; Unsaturated fatty acids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Fatty amides; N-acyl amines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Glycerophospholipids; Glycerophosphoethanolamines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Linear polyketides; Depsipeptides"	1	0	1	1	1	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	1	1	1	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Linear polyketides; Fatty acyl glycosides of mono- and disaccharides"	0	0	0	0	1	0	0	0	0	1	1	0	1	0	1	1	1	1	0	1	0	0	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Linear polyketides; Macrolide lactones"	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	1	0	0	0	0	0	0	1	0	0	1	0	1	0	0	0	0	0	0	1	1	1	1	1	1
+"Polyketides; Linear polyketides; Open-chain polyketides"	1	1	5	5	6	6	6	8	7	5	6	5	4	4	4	6	5	6	6	4	5	4	5	4	5	6	6	5	5	5	5	5	5	4	4	3	7	7	8	1	0	1	1	1	1	1	1	1
+"Polyketides; Linear polyketides; Steroidal alkaloids"	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0
+"Polyketides; Lysine alkaloids; Unsaturated fatty acids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Macrolides; Depsipeptides"	0	1	2	4	3	3	4	4	4	2	3	3	4	4	4	2	3	3	4	4	4	4	4	4	3	3	4	5	4	4	2	2	2	0	0	0	2	2	2	1	1	1	0	0	0	0	0	0
+"Polyketides; Macrolides; Epothilones"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	1	1	0	0	0	0	1	1	1	1	1	1	1	1
+"Polyketides; Macrolides; Erythromycins"	2	2	2	4	5	5	5	4	5	5	3	5	5	6	5	4	5	4	4	4	3	6	4	5	4	4	4	4	4	4	4	3	3	3	1	1	5	5	4	0	1	1	2	2	2	2	3	3
+"Polyketides; Macrolides; Macrolide lactones"	2	1	1	3	3	3	2	2	2	2	2	2	1	1	2	1	2	2	2	1	1	1	2	2	2	2	2	2	2	2	2	2	2	1	1	1	2	2	2	1	0	2	2	2	2	2	2	2
+"Polyketides; Macrolides; Oligomycins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Macrolides; Open-chain polyketides"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Polyketides; Meroterpenoids; Acyl phloroglucinols"	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Meroterpenoids; Catechols with side chains"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+"Polyketides; Meroterpenoids; Isoquinoline alkaloids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Meroterpenoids; Polyprenylated cyclic polyketides Hop meroterpenoids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Mitomycin derivatives; Mitomycins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Monoterpenoids; Iridoids monoterpenoids"	0	2	2	2	3	3	2	2	1	1	1	1	2	2	2	2	2	2	1	2	1	1	1	2	2	2	2	1	1	1	2	2	2	0	0	0	2	2	1	1	1	1	0	1	0	0	1	0
+"Polyketides; Monoterpenoids; Monocyclic monoterpenoids"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Naphthalenes; Bisnaphthalenes"	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Nucleosides; Erythromycins"	1	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	1	0	0
+"Polyketides; Oligopeptides; Ceramides"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Oligopeptides; Cyclic peptides"	0	0	2	4	4	4	3	4	4	5	5	4	4	5	3	3	3	4	3	3	3	3	1	5	5	7	6	8	9	7	1	1	1	1	2	2	3	4	4	1	0	0	0	0	0	2	2	2
+"Polyketides; Oligopeptides; Depsipeptides"	5	0	2	2	2	2	4	6	6	6	3	4	3	5	3	1	1	2	3	3	3	3	5	3	9	9	5	13	13	12	1	1	2	7	6	5	5	4	5	1	1	3	5	6	5	6	5	5
+"Polyketides; Oligopeptides; Lipopeptides"	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Polyketides; Oligopeptides; Open-chain polyketides"	0	0	0	2	1	1	2	2	3	1	1	1	1	1	1	0	0	0	2	1	1	1	2	2	0	0	0	2	2	1	1	1	1	0	0	1	2	1	2	1	1	1	0	2	2	2	1	1
+"Polyketides; Ornithine alkaloids; Depsipeptides"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Peptide alkaloids; Steroidal alkaloids"	0	0	1	1	1	1	1	1	0	0	1	1	1	1	1	0	1	1	0	0	0	1	1	1	1	0	0	1	1	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Phloroglucinols; Simple phenolic acids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Polycyclic aromatic polyketides; Cyclic peptides"	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Polycyclic aromatic polyketides; Depsipeptides"	0	0	0	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	0	1	1	1	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Polycyclic aromatic polyketides; Terpenoid alkaloids"	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Polycyclic aromatic polyketides; Tetracyclines"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Polyethers; Open-chain polyketides"	0	0	2	2	2	2	1	1	1	1	1	1	2	2	2	2	2	2	1	2	2	1	1	2	2	2	2	3	1	2	1	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Polyketides; Proline alkaloids; Furans"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	0	1	1	1	1	1
+"Polyketides; Small peptides; Dipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Small peptides; Simple coumarins"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0
+"Polyketides; Sphingolipids; Macrolide lactones"	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+"Polyketides; Steroids; Open-chain polyketides"	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0	1	0	0	1	0	1	1	1	1	0	0	0	0	0	0	0	0	0	1	1	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Polyketides; Triterpenoids; Macrolide lactones"	0	0	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Polyketides; Tryptophan alkaloids; Cyclic peptides"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Polyketides; Tryptophan alkaloids; Depsipeptides"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Polyketides; Tryptophan alkaloids; Isoquinoline alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	1	1	1	1	1	1	1	1
+"Polyketides; Tryptophan alkaloids; Pyridine alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	1	1	1	1	1	1	1	1	1
+"Polyketides; Tryptophan alkaloids; Simple coumarins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Shikimates and Phenylpropanoids; Anthranilic acid alkaloids; Simple coumarins"	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Coumarins; Fatty aldehydes"	0	0	0	0	1	0	1	0	0	1	1	1	1	0	1	0	0	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	0	1	0	1	0	1	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Coumarins; Oligomeric stibenes"	0	0	0	1	1	1	1	1	1	1	1	0	1	1	1	0	1	1	1	1	1	1	0	1	0	0	0	0	0	0	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Coumarins; Simple coumarins"	0	0	0	0	0	0	1	0	0	0	0	0	1	2	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Cyclic polyketides; Simple phenolic acids"	0	0	0	0	0	0	1	1	0	0	0	0	2	2	1	0	0	0	0	0	0	2	2	2	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1
+"Shikimates and Phenylpropanoids; Diphenyl ethers DPEs; Marine-bacterial DPEs"	1	0	0	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Fatty acyls; Dicarboxylic acids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Fatty acyls; Fatty alcohols"	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Fatty acyls; Halogenated hydrocarbons"	0	0	0	1	0	0	1	0	1	1	1	1	1	1	1	1	1	0	0	1	0	1	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Fatty acyls; Tropolones and derivatives Shikimate"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Anthraquinones and anthrones"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Chalcones"	0	0	0	2	2	2	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Chromones"	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Dihydroflavonols"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Flavan-3-ols"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Flavanones"	1	2	2	1	1	1	2	1	2	2	3	2	3	3	4	0	0	0	1	1	1	4	4	4	0	1	1	3	4	3	3	3	3	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Flavones"	0	0	0	2	2	1	2	2	2	0	1	0	1	3	2	1	1	1	2	2	2	2	1	2	1	1	1	1	1	2	3	2	2	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Flavonols"	0	0	0	5	5	5	1	1	1	3	3	3	1	1	0	1	1	1	1	1	1	1	1	1	1	2	2	4	3	3	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Flavonostilbenes"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Monomeric stilbenes"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Oligomeric stibenes"	0	1	1	2	2	2	1	1	1	3	2	1	1	1	1	1	2	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	1	1	1	0	0	0	1	0	1	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Proanthocyanins"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Flavonoids; Secoiridoid monoterpenoids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Isoflavonoids; Coumaronochromones"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Isoflavonoids; Flavanones"	0	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Isoflavonoids; Isoflavones"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Isoflavonoids; Neolignans"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Lignans; Flavanones"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Shikimates and Phenylpropanoids; Lysine alkaloids; Penicillins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Meroterpenoids; Simple coumarins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Monoterpenoids; Iridoids monoterpenoids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Monoterpenoids; Menthane monoterpenoids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1
+"Shikimates and Phenylpropanoids; Nicotinic acid alkaloids; Pyridine alkaloids"	0	0	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Phenolic acids C6-C1; Cinnamic acids and derivatives"	0	0	0	0	1	0	0	0	0	0	1	1	0	0	0	0	1	0	1	1	1	0	0	0	0	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Phenolic acids C6-C1; Shikimic acids and derivatives"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Phenolic acids C6-C1; Simple phenolic acids"	1	1	1	1	0	1	0	1	1	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	2	2	2	2	2	1	0	1	0	1	1	1	1	2	2
+"Shikimates and Phenylpropanoids; Phenylpropanoids C6-C3; Cinnamic acids and derivatives"	0	1	1	1	1	1	1	1	1	1	1	1	2	2	3	1	2	2	1	1	1	3	3	3	1	1	1	1	1	1	1	1	1	0	0	0	1	1	0	1	1	1	0	1	0	0	1	0
+"Shikimates and Phenylpropanoids; Phenylpropanoids C6-C3; Simple coumarins"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Polycyclic aromatic polyketides; Anthraquinones and anthrones"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Pseudoalkaloids; Cephalosporins"	0	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	0	1	1	1	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	0	0	0	0
+"Shikimates and Phenylpropanoids; Pseudoalkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	1	1	1	0	0	0
+"Shikimates and Phenylpropanoids; Small peptides; Aminoacids"	1	0	0	1	1	2	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	1	1	1	3	1	1	1	1	1	1	2	2	2	2	1	1	1
+"Shikimates and Phenylpropanoids; Stilbenoids; Flavanones"	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Stilbenoids; Oligomeric stibenes"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Terphenyls; Anthraquinones and anthrones"	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Tropolones; Tropolones and derivatives Shikimate"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Tryptophan alkaloids; Isoquinoline alkaloids"	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	1	1	1	0	1	0	0	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Shikimates and Phenylpropanoids; Tryptophan alkaloids; Simple coumarins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Shikimates and Phenylpropanoids; Tyrosine alkaloids; Arylnaphthalene and aryltetralin lignans"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Alkylresorcinols; Triacylglycerols"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Apocarotenoids; Acetogenins"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Apocarotenoids; Apocarotenoids β-"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Apocarotenoids; Apocarotenoidsε-"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Apocarotenoids; Menthane monoterpenoids"	0	0	0	0	0	0	1	1	1	1	1	1	0	0	1	0	0	0	1	0	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Carotenoids C40; Carotenoids C40, β-β"	0	0	0	1	1	1	1	2	1	1	2	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	3	3	4	0	0	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Carotenoids C40; Cholestane steroids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Terpenoids; Carotenoids C50; Carotenoids C40, β-β"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Cyclic polyketides; Simple amide alkaloids"	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Diterpenoids; Amphilectane diterpenoids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Diterpenoids; Androstane steroids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Diterpenoids; Baccharane triterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Diterpenoids; Labdane diterpenoids"	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Diterpenoids; Pregnane steroids"	1	1	1	1	1	1	2	2	2	2	2	2	2	2	2	2	2	2	2	2	2	2	1	2	2	2	2	2	2	1	1	1	1	1	1	0	2	2	2	1	1	0	1	1	1	0	0	0
+"Terpenoids; Diterpenoids; Sphingoid bases"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0
+"Terpenoids; Diterpenoids; Steroidal alkaloids"	0	0	0	0	1	1	0	1	1	0	0	0	0	1	1	0	0	1	1	0	1	0	0	1	0	0	1	2	2	2	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	1
+"Terpenoids; Diterpenoids; Unsaturated fatty acids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Fatty Acids and Conjugates; Unsaturated fatty acids"	0	0	0	0	0	0	2	2	2	1	2	1	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	0	0	0	0	0	0	0	2	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Fatty acyls; Fatty alcohols"	0	0	0	0	0	0	1	1	1	0	0	0	0	1	0	0	1	1	1	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Linear polyketides; Cholane steroids"	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Linear polyketides; Diacylglycerols"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	1	0	1	0	0	0	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1
+"Terpenoids; Linear polyketides; Open-chain polyketides"	2	0	0	0	0	0	0	0	0	2	1	1	1	0	0	0	0	0	1	0	0	0	0	0	2	2	2	0	1	0	0	0	0	2	2	1	0	0	0	0	1	1	1	1	2	2	2	2
+"Terpenoids; Lysine alkaloids; Lipopeptides"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Lysine alkaloids; Piperidine alkaloids"	0	1	1	2	2	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	1	2	1	1	1	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0
+"Terpenoids; Lysine alkaloids; Pregnane steroids"	0	0	0	0	0	0	1	1	1	0	0	0	1	1	0	0	1	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Lysine alkaloids; Steroidal alkaloids"	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	1	1	0	0	0	0	0	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Ansa macrolides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Boromycins"	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Carotenoids C40, β-β"	0	0	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Labdane diterpenoids"	0	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	0	1	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Open-chain polyketides"	1	0	1	1	2	2	1	2	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	2	1	1	1	1	1	1	0	1	0	0	0	0	1	2	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Macrolides; Steroidal alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1
+"Terpenoids; Macrolides; Terpenoid tetrahydroisoquinoline alkaloids"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Meroterpenoids; Catechols with side chains"	0	0	0	0	0	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Meroterpenoids; Tetraketide meroterpenoids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	1	1	1	1	1	1
+"Terpenoids; Monoterpenoids; Aminoacids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1	1	2	2	2	1
+"Terpenoids; Monoterpenoids; Carboline alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Caryophyllane sesquiterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Cinnamic acids and derivatives"	0	0	0	0	0	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Iridoids monoterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Irregular monoterpenoids"	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Menthane monoterpenoids"	1	0	0	0	0	0	1	1	0	0	1	1	0	0	1	0	0	0	1	0	1	0	0	0	0	1	1	0	0	0	0	0	0	1	1	1	1	0	1	0	0	0	1	1	0	1	1	1
+"Terpenoids; Monoterpenoids; N-acyl amines"	0	0	0	0	0	0	1	1	1	0	1	1	0	1	0	0	0	0	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Penicillins"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Pinane monoterpenoids"	2	2	6	5	5	5	9	9	9	7	9	8	6	5	8	3	4	6	11	7	7	5	6	8	7	10	9	6	8	7	5	5	5	1	2	1	11	6	9	0	0	0	0	0	0	0	0	0
+"Terpenoids; Monoterpenoids; Pyrimidine nucleostides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	1	0	0	0
+"Terpenoids; Monoterpenoids; Quinolizidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0
+"Terpenoids; Monoterpenoids; Secoiridoid monoterpenoids"	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	2	2	1	2	1	1	0	1
+"Terpenoids; Oligopeptides; Cyclic peptides"	0	0	1	1	1	1	0	0	0	1	1	0	0	0	0	0	1	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Oligopeptides; Lipopeptides"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	1	1	1	0
+"Terpenoids; Oligopeptides; Microginins"	0	0	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	1	1	1	1	1	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0
+"Terpenoids; Oligopeptides; Steroidal alkaloids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Ornithine alkaloids; Aspidosperma type"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Polyethers; Dammarane and Protostane triterpenoids"	0	0	0	0	1	1	1	1	0	0	1	0	1	0	0	0	0	0	1	0	0	0	0	0	1	0	1	1	1	0	0	0	0	0	0	0	0	0	0	1	0	1	1	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids transamidation; Steroidal alkaloids"	0	0	1	1	1	1	1	2	2	1	1	1	1	1	1	0	1	1	1	1	1	1	0	1	1	1	1	1	1	1	2	2	2	1	1	1	1	1	1	0	0	0	1	1	1	1	1	0
+"Terpenoids; Pseudoalkaloids; Abietane diterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids; Oleanane triterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids; Open-chain polyketides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	1	1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	1	1	1
+"Terpenoids; Pseudoalkaloids; Phenylalanine-derived alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids; Piperidine alkaloids"	0	0	0	0	0	0	1	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids; Pregnane steroids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Pseudoalkaloids; Steroidal alkaloids"	1	2	3	2	2	2	3	4	4	3	3	3	2	3	2	3	3	3	3	2	3	2	3	3	2	3	2	2	2	2	3	2	3	1	1	2	2	4	3	1	0	0	1	1	1	1	1	1
+"Terpenoids; Sesquiterpenoids; Caryophyllane sesquiterpenoids"	0	0	0	0	1	1	3	3	4	1	3	3	2	2	2	0	0	0	4	2	2	2	3	3	1	2	1	1	1	0	0	0	0	0	0	0	3	1	2	1	0	0	0	1	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Drimane sesquiterpenoids"	0	0	0	0	0	0	1	1	1	1	1	1	0	1	1	0	0	0	1	0	1	0	0	0	0	1	1	0	1	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Farnesane sesquiterpenoids"	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Fatty alcohols"	0	0	1	2	2	2	2	2	2	0	2	1	2	2	2	0	1	2	2	2	2	2	1	2	2	2	0	2	2	2	0	0	0	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Longifolane sesquiterpenoids"	0	0	0	0	0	0	1	1	1	1	1	1	0	1	0	1	0	0	1	1	1	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; N-acyl amines"	0	0	0	0	0	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Norlabdane diterpenoids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Open-chain polyketides"	0	0	0	0	0	0	0	0	1	0	0	0	0	1	1	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Quinolizidine alkaloids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesquiterpenoids; Unsaturated fatty acids"	0	0	0	1	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesterterpenoids; N-acyl amines"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sesterterpenoids; Ophiobolane sesterterpenoids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0
+"Terpenoids; Small peptides; Pinane monoterpenoids"	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Sphingolipids; Sphingoid bases"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	0
+"Terpenoids; Steroids; Androstane steroids"	0	0	0	0	0	0	1	1	1	0	1	1	0	0	0	0	0	0	1	0	0	0	1	1	0	1	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	1	1	1	1	0	0	0
+"Terpenoids; Steroids; Apocarotenoids β-"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1
+"Terpenoids; Steroids; Carotenoids C40, β-β"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	1	0	0	0
+"Terpenoids; Steroids; Cholane steroids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Steroids; Cholestane steroids"	6	1	0	3	3	3	2	2	2	2	2	3	2	2	3	0	1	2	2	2	2	2	2	2	3	1	0	3	3	3	1	1	1	5	6	4	3	3	3	3	4	4	7	7	7	6	6	6
+"Terpenoids; Steroids; Depsipeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Steroids; Drimane sesquiterpenoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Steroids; Erythromycins"	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	1
+"Terpenoids; Steroids; Estrane steroids"	1	0	0	0	0	0	1	2	1	1	1	1	0	0	1	0	1	1	0	0	0	0	0	1	1	2	1	1	1	1	1	0	0	1	1	1	1	1	1	0	1	1	1	1	1	1	1	1
+"Terpenoids; Steroids; N-acyl amines"	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Steroids; Ophiobolane sesterterpenoids"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	1	0	1	1	1
+"Terpenoids; Steroids; Pregnane steroids"	1	6	5	6	4	5	4	5	4	6	5	4	6	5	6	6	4	5	4	5	4	5	6	5	3	4	3	5	7	6	5	4	4	3	3	1	6	4	5	1	0	0	1	2	2	3	1	1
+"Terpenoids; Steroids; Simple amide alkaloids"	0	1	1	2	2	2	2	2	2	2	2	2	1	1	1	1	1	1	1	2	1	1	1	2	2	2	2	2	2	2	2	1	1	0	0	0	2	2	2	0	0	0	0	0	0	0	0	0
+"Terpenoids; Steroids; Steroidal alkaloids"	0	0	0	1	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	0	1	1	2	2	2	2	2	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Triterpenoids; Baccharane triterpenoids"	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0
+"Terpenoids; Triterpenoids; Carotenoids C40, β-β"	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	1	1	1	1	1	1	1	1
+"Terpenoids; Triterpenoids; Limonoids"	0	0	1	2	2	2	3	3	3	2	2	2	2	2	2	1	1	2	3	2	1	2	1	2	3	2	2	4	4	4	0	0	0	0	0	0	2	2	2	0	0	0	1	1	1	0	0	0
+"Terpenoids; Triterpenoids; Lipopeptides"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Triterpenoids; Oleanane triterpenoids"	2	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	2	1	0	1	1	1	1	1	1	2	1	1	1	1	2	1	1	2	2	0	1	2	2	3	3	2	2	2
+"Terpenoids; Triterpenoids; Open-chain polyketides"	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+"Terpenoids; Triterpenoids; Polyprenol derivatives"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Triterpenoids; Pregnane steroids"	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+"Terpenoids; Triterpenoids; Steroidal alkaloids"	0	0	2	2	2	2	4	4	4	4	4	4	3	4	4	2	3	4	4	4	4	4	2	4	4	3	3	3	3	4	1	1	1	0	0	0	4	4	4	0	0	0	0	0	0	0	0	0
+"Terpenoids; Tryptophan alkaloids; Limonoids"	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	1	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0

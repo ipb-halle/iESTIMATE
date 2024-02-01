@@ -14,3 +14,6 @@ tukey.test(response, term)
 \description{
 Function to perform the Tukey post-hoc HSD test on response and model terms
 }
+\examples{
+tukey.test(response=marchantiales$model_div$unique, term=as.factor(marchantiales$metadata$species))
+}

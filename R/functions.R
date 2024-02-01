@@ -4,16 +4,13 @@
 # ---------- Shannon Diversity ----------
 #' Function to calculate the Shannon diversity measure
 #'
+#' This function is now obsolete, as it returns the same values than vegan::diversity(x, index="shannon"). Since we do not expect variables with negative intensity, we exclude negative values and take the natural logarithm.
+#'
 #' @param p vector with response variables of one sample
 #' @export
-#' @import vegan MASS
 #' @examples
 #' shannon.diversity(p=c(4,8))
 shannon.diversity <- function(p) {
-	# Based on Li et al. (2016)
-	# Function is obsolete, as it returns same values than vegan::diversity(x, index="shannon")
-	# Since we do not expect features with negative intensity,
-	# we exclude negative values and take the natural logarithm
 	if (min(p) < 0 || sum(p) <= 0)
 		return(NA)
 	pij <- p[p>0] / sum(p)
@@ -27,12 +24,11 @@ shannon.diversity <- function(p) {
 #'
 #' @param p vector with response variables of one sample
 #' @export
-#' @import vegan MASS
+#' @importFrom vegan specnumber
 #' @examples
 #' menhinick.diversity(p=c(4,8))
 menhinick.diversity <- function(p) {
-	# Based on: http://www.coastalwiki.org/wiki/Measurements_of_biodiversity#Species_richness_indices
-	D_Mn <- length(p) / sqrt(vegan::specnumber(p))
+	D_Mn <- length(p) / sqrt(specnumber(p))
 }
 
 
@@ -43,13 +39,14 @@ menhinick.diversity <- function(p) {
 #' @param response vector with response variables
 #' @param term vector with factorized terms
 #' @export
-#' @import stats multcomp
-###_ @examples
-###_ tukey.test(response=model_div$unique, term=as.factor(mzml_pheno_samples))
+#' @importFrom stats aov
+#' @importFrom multcomp glht mcp cld
+#' @examples
+#' tukey.test(response=marchantiales$model_div$unique, term=as.factor(marchantiales$metadata$species))
 tukey.test <- function(response, term) {
-	model_anova <- stats::aov(formula(response ~ term))
-	model_mc <- multcomp::glht(model_anova, multcomp::mcp(term="Tukey"))
-	model_cld <- multcomp::cld(summary(model_mc), decreasing=TRUE)
+	model_anova <- aov(formula(response ~ term))
+	model_mc <- glht(model_anova, mcp(term="Tukey"))
+	model_cld <- cld(summary(model_mc), decreasing=TRUE)
 	model_tukey <- data.frame("tukey_groups"=model_cld$mcletters$Letters)
 	return(model_tukey)
 }
@@ -70,11 +67,12 @@ print_p.values <- function(p.values) {
 
 
 # ---------- Calculate R-squared ----------
+#' @importFrom caret postResample
 f.r2 <- function(actual, predicted) {
 	actual <- as.numeric(actual)
 	predicted <- as.numeric(predicted)
 
-	R2 <- caret::postResample(actual, predicted)[2]
+	R2 <- postResample(actual, predicted)[2]
 	#R2 <- 1 - (sum((actual-predicted)^2)/sum((actual-mean(actual))^2))
 
 	return(R2)
@@ -111,7 +109,7 @@ f.weighted_accuracy <- function(sel_factor, predicted) {
 	if (length(weights) != length(sel_levels)) {
 		stop("Error! Number of weights should have some length as the number of classes.")
 	}
-	if (sum(weights) != 1) {
+	if (round(sum(weights),0) != 1) {
 		stop("Error! Weights do not sum to 1.")
 	}
 
@@ -128,6 +126,21 @@ f.weighted_accuracy <- function(sel_factor, predicted) {
 
 
 # ---------- Performance Measures ----------
+#' @importFrom scales rescale
+#' @importFrom dummies dummy
+#' @importFrom pROC multiclass.roc
+#' @importFrom pROC plot.roc
+#' @importFrom pROC ci.se
+#' @importFrom pROC ci.sp
+#' @importFrom mltest ml_test
+#' @importFrom mlr measureBER
+#' @importFrom PRROC pr.curve
+#' @importFrom multiROC multi_roc
+#' @importFrom multiROC multi_pr
+#' @importFrom multiROC plot_roc_data
+#' @importFrom multiROC plot_pr_data
+#' @importFrom grDevices col2rgb pdf dev.off rgb
+#' @importFrom graphics legend lines text
 f.performance_measures_caret <- function(model, sel_factor, sel_colors) {
 	# List of measures
 	sel <- list()
@@ -146,8 +159,8 @@ f.performance_measures_caret <- function(model, sel_factor, sel_colors) {
 	# Build prediction matrix
 	model_pred <- as.data.frame(model$pred[, which(colnames(model$pred) %in% sel_levels)])
 	colnames(model_pred) <- paste0(colnames(model_pred), "_pred_")
-	#model_pred <- scales::rescale(x=as.matrix(model_pred), to=c(0,1))
-	pred_true <- data.frame(dummies::dummy(model$pred$obs))
+	#model_pred <- rescale(x=as.matrix(model_pred), to=c(0,1))
+	pred_true <- data.frame(dummy(model$pred$obs))
 	colnames(pred_true) <- paste0(sel_levels, "_true")
 	model_pred <- cbind(pred_true, model_pred)
 
@@ -158,20 +171,20 @@ f.performance_measures_caret <- function(model, sel_factor, sel_colors) {
 
 	# Multi-class AUC as defined by Hand & Till (2001)
 	if (nlevels(sel_factor) > 2) {
-		multiclass_roc <- pROC::multiclass.roc(response=sel_obs, predictor=sel_prob, levels=sel_levels, percent=FALSE, print.auc=TRUE)
+		multiclass_roc <- multiclass.roc(response=sel_obs, predictor=sel_prob, levels=sel_levels, percent=FALSE, print.auc=TRUE)
 		multiclass_auc <- round(as.numeric(multiclass_roc$auc),3)
 	}
 
 	# Multi-class classification metrics
 	sel_pred <- as.factor(sel_pred)
 	#levels(sel_pred) <- levels(sel_obs)
-	model_metrics <- mltest::ml_test(predicted=sel_pred, true=sel_obs)
+	model_metrics <- ml_test(predicted=sel_pred, true=sel_obs)
 
 	# Multi-class Classification rate (= 1 - error rate)
 	mcr <- f.classification_rate(sel_factor=sel_obs, predicted=sel_pred)
 
 	# Balanced Error Rate (BER) (= 1 - multi-class classification rate)
-	ber <- mlr::measureBER(truth=sel_obs, response=sel_pred)
+	ber <- measureBER(truth=sel_obs, response=sel_pred)
 
 	# Accuracy
 	accuracy <- f.accuracy(sel_factor=sel_obs, predicted=sel_pred)
@@ -238,7 +251,11 @@ f.performance_measures_caret <- function(model, sel_factor, sel_colors) {
 	model_ppr <- list()
 	plot(xlim=c(0,1), ylim=c(0,1), x=NULL, y=NULL, xlab="Recall", ylab="Precision", main="Precision Recall Curves of levels")
 	for (i in 1:length(sel_levels)) {
-		model_ppr[[as.character(sel_levels[i])]] <- pr.curve(scores.class0=model_pred[as.logical(model_pred[,i]),i+length(sel_levels)], scores.class1=model_pred[!as.logical(model_pred[,i]),i+length(sel_levels)], curve=TRUE)
+		class0 <- model_pred[as.logical(model_pred[,i]),i+length(sel_levels)]
+		class0[is.na(class0)] <- 0
+		class1 <- model_pred[!(as.logical(model_pred[,i])),i+length(sel_levels)]
+		class1[is.na(class1)] <- 0
+		model_ppr[[as.character(sel_levels[i])]] <- pr.curve(scores.class0=class0, scores.class1=class1, curve=TRUE)
 		lines(x=model_ppr[[as.character(sel_levels[i])]]$curve[,1], y=model_ppr[[as.character(sel_levels[i])]]$curve[,2], xlab="Recall",ylab="Precision", t="l", col=sel_colors[i], lwd=2)
 	}
 	legend("bottomleft", legend=paste0(sel_levels, ", AUC-PR: ", round(as.numeric(unlist(lapply(model_ppr, function(x) x$auc.integral*100))), 1), "%"), col=sel_colors, lwd=2, cex=0.75)
@@ -255,7 +272,8 @@ f.performance_measures_caret <- function(model, sel_factor, sel_colors) {
 
 
 # ---------- Select features from model ----------
-f.select_features_from_model <- function(feat_list, feat_class, model_varimp, keepx_min, confidence=0.95) {
+#_' @importFrom base order
+f.select_features_from_model <- function(feat_list, feat_class, model_varimp, keepx_min=10, keepx_max=0, confidence=0.95) {
 	if (ncol(as.data.frame(model_varimp)) < 2 ) {
 		model_varimp <- as.data.frame(model_varimp)
 		model_varimp <- cbind(model_varimp, model_varimp[,1])
@@ -269,14 +287,15 @@ f.select_features_from_model <- function(feat_list, feat_class, model_varimp, ke
 	for (i in unique(feat_class)) {
 		elements <- colnames(feat_list)[which(model_varimp[,i] >= confidence * max(model_varimp[,i]))]
 
-		#if (length(elements) > keepx_max) {
-		#  sel_list[[i]] <- colnames(feat_list)[base::order(model_varimp[, i], decreasing=TRUE)[1:keepx_max]]
-		#} else
 		if (length(elements) < keepx_min) {
-			sel_list[[i]] <- colnames(feat_list)[base::order(model_varimp[, i], decreasing=TRUE)[1:keepx_min]]
+			select_elements <- keepx_min
+		} else if ((length(elements) > keepx_max) & (keepx_max > 0)) {
+			select_elements <- keepx_max
 		} else {
-			sel_list[[i]] <- elements
+			select_elements <- length(elements)
 		}
+
+		sel_list[[i]] <- colnames(feat_list)[order(model_varimp[, i], decreasing=TRUE)[1:select_elements]]
 
 		sel_list[[i]] <- sort(sel_list[[i]])
 	}
@@ -304,12 +323,21 @@ f.count.selected_features <- function(sel_feat) {
 #' @param components number of components, defaults to 2
 #' @param tune_length how often repeated cross validation is performed, defaults to 10
 #' @param quantile_threshold confidence level, defaults to 0.95
+#' @param keepx_min Minimum number of variables to keep for level (defaults to 10)
+#' @param keepx_max Maximum number of variables to keep for level (defaults to 0, which means no limit)
 #' @param plot_roc_filename plot metrics to external pdf, defaults to NULL
 #' @export
-#' @import caret multiROC PRROC pROC
-#_' @examples
-#_' select_features_pls(feat_matrix=tenerife$comp_list, sel_factor=tenerife$species, sel_colors=tenerife$colors, components=5)
-select_features_pls <- function(feat_matrix, sel_factor, sel_colors, components=2, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL) {
+#' @importFrom pls mvr plsr cppls
+#' @importFrom caret train
+#' @importFrom caret trainControl
+#' @importFrom caret varImp
+#' @importFrom grDevices pdf dev.off
+#' @examples
+#' select_features_pls(feat_matrix=marchantiales$comp_list,
+#' sel_factor=as.factor(marchantiales$metadata$species),
+#' sel_colors=marchantiales$metadata$color,
+#' components=(nlevels(as.factor(marchantiales$metadata$species))-1))
+select_features_pls <- function(feat_matrix, sel_factor, sel_colors, components=2, tune_length=10, quantile_threshold=0.95, keepx_min=10, keepx_max=0, plot_roc_filename=NULL) {
 	# Make factors readible by R
 	sel_factor <- as.factor(make.names(sel_factor))
 
@@ -321,14 +349,14 @@ select_features_pls <- function(feat_matrix, sel_factor, sel_colors, components=
 	}
 
 	# Detach conflicting mixOmics package
-	#if ("package:mixOmics" %in% search()) detach(package:mixOmics, unload=TRUE)
+	if ("package:mixOmics" %in% search()) detach(package:mixOmics, unload=TRUE)
 
 	# Train PLS model
 	#tuneGrid=data.frame(ncomp=2)
-	model_pls <- caret::train(x=as.matrix(feat_matrix), y=sel_factor, method="pls",
+	model_pls <- train(x=as.matrix(feat_matrix), y=sel_factor, method="pls",
 							  preProcess=c("center", "scale"),
 							  tuneGrid=data.frame(ncomp=components),
-							  tuneLength=tune_length, trControl=caret::trainControl(method="repeatedcv", number=10, repeats=5, classProbs=TRUE, savePredictions="final"))
+							  tuneLength=tune_length, trControl=trainControl(method="repeatedcv", number=10, repeats=5, classProbs=TRUE, savePredictions="final"))
 	print(paste("Number of chosen components:",as.numeric(model_pls$bestTune)))
 
 	# Get variable importances
@@ -336,10 +364,11 @@ select_features_pls <- function(feat_matrix, sel_factor, sel_colors, components=
 	rownames(imp_pls$importance) <- as.character(rownames(imp_pls$importance))
 
 	# Names of selected features
-	sel_pls <- f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_pls$importance, confidence=quantile_threshold, keepx_min=10)
+	sel_pls <- f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_pls$importance, confidence=quantile_threshold, keepx_min=keepx_min, keepx_max=keepx_max)
 
 	# Save selected variables
-	sel_pls[["_selected_variables_"]] <- unique(unlist(f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_pls$importance, confidence=quantile_threshold, keepx_min=10)))
+	sel_pls[["_selected_variables_"]] <- unique(unlist(f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_pls$importance, confidence=quantile_threshold, keepx_min=keepx_min, keepx_max=keepx_max)))
+	sel_pls[["_varImp_"]] <- as.data.frame(imp_pls$importance)
 
 	# Performance measures
 	sel_pls <- do.call(c, list(sel_pls, f.performance_measures_caret(model=model_pls, sel_factor=sel_factor, sel_colors=sel_colors)))
@@ -359,12 +388,19 @@ select_features_pls <- function(feat_matrix, sel_factor, sel_colors, components=
 #' @param sel_colors color vector for the factor
 #' @param tune_length how often repeated cross validation is performed, defaults to 10
 #' @param quantile_threshold confidence level, defaults to 0.95
+#' @param keepx_min Minimum number of variables to keep for level (defaults to 10)
+#' @param keepx_max Maximum number of variables to keep for level (defaults to 0, which means no limit)
 #' @param plot_roc_filename plot metrics to external pdf, defaults to NULL
 #' @export
-#' @import caret randomForest multiROC PRROC pROC
+#' @importFrom randomForest randomForest
+#' @importFrom caret train
+#' @importFrom caret trainControl
+#' @importFrom caret varImp
 #_' @examples
-#_' select_features_random_forest(feat_matrix=tenerife$comp_list, sel_factor=tenerife$species, sel_colors=tenerife$colors, components=5)
-select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL) {
+#_' select_features_random_forest(feat_matrix=marchantiales$comp_list,
+#_' sel_factor=as.factor(marchantiales$metadata$species),
+#_' sel_colors=marchantiales$metadata$color)
+select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, tune_length=10, quantile_threshold=0.95, keepx_min=10, keepx_max=0, plot_roc_filename=NULL) {
 	# Make factors readible by R
 	sel_factor <- as.factor(make.names(sel_factor))
 
@@ -375,19 +411,20 @@ select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, t
 		pdf(file=as.character(plot_roc_filename), encoding="ISOLatin1", pointsize=10, width=6, height=6, family="Helvetica")
 	}
 
-	# Train RF model
-	model_rf <- caret::train(x=as.matrix(feat_matrix), y=sel_factor, method="rf", importance=TRUE, proximity=TRUE,
-							 tuneLength=tune_length, trControl=caret::trainControl(method="repeatedcv", number=10, repeats=5, classProbs=TRUE, savePredictions="final"))
+	# Train RF model (method="rf", method="ranger" is parallel)
+	model_rf <- train(x=as.matrix(feat_matrix), y=sel_factor, method="rf", importance=TRUE, proximity=TRUE,
+							 tuneLength=tune_length, trControl=trainControl(method="repeatedcv", number=10, repeats=5, classProbs=TRUE, savePredictions="final"))
 
 	# Get variable importances
 	imp_rf <- varImp(object=model_rf)
 	rownames(imp_rf$importance) <- as.character(rownames(imp_rf$importance))
 
 	# Save names of selected features
-	sel_rf <- f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_rf$importance, confidence=quantile_threshold, keepx_min=10)
+	sel_rf <- f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_rf$importance, confidence=quantile_threshold, keepx_min=keepx_min, keepx_max=keepx_max)
 
 	# Save selected variables
-	sel_rf[["_selected_variables_"]] <- unique(unlist(f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_rf$importance, confidence=quantile_threshold, keepx_min=10)))
+	sel_rf[["_selected_variables_"]] <- unique(unlist(f.select_features_from_model(feat_list=feat_matrix, feat_class=sel_factor, model_varimp=imp_rf$importance, confidence=quantile_threshold, keepx_min=keepx_min, keepx_max=keepx_max)))
+	sel_rf[["_varImp_"]] <- as.data.frame(imp_rf$importance)
 
 	# Performance measures
 	sel_rf <- do.call(c, list(sel_rf, f.performance_measures_caret(model=model_rf, sel_factor=sel_factor, sel_colors=sel_colors)))
@@ -414,10 +451,20 @@ select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, t
 #' @param cex_col size for column, defaults to 0.5
 #' @param cex_row size for row, defaults to 0.7
 #' @export
-#' @import gplots
-#_' @examples
-#_' heatmap.selected_features(feat_list=tenerife$comp_list, sel_feat=sel_pls_subclass_int_list$`_selected_variables_`, sample_colors=mzml_pheno_colors_samples, plot_width=7, plot_height=7, cex_col=0.5, cex_row=0.4, filename="plots_species/ms2_subclass_int_list_select_pls.pdf", main="PLS")
-heatmap.selected_features <- function(feat_list, sel_feat, sel_names=NULL, sample_colors=NULL, filename, main, scale="col", plot_width=6, plot_height=5, cex_col=0.5, cex_row=0.7) {
+#_' @importFrom base scale
+#_' @importFrom stats hclust
+#_' @importFrom stats dist
+#' @importFrom gplots heatmap.2
+#' @importFrom grDevices colorRampPalette pdf dev.off
+#' @importFrom stats as.dendrogram dist formula hclust
+#' @examples
+#' heatmap.selected_features(feat_list=marchantiales$comp_list,
+#' sel_feat=select_features_pls(feat_matrix=marchantiales$comp_list,
+#'                              sel_factor=as.factor(marchantiales$metadata$species),
+#'                              sel_colors=marchantiales$metadata$color,
+#'                              components=(nlevels(as.factor(marchantiales$metadata$species))-1))$`_selected_variables_`,
+#' sample_colors=marchantiales$metadata$color, filename=NULL)
+heatmap.selected_features <- function(feat_list, sel_feat, sel_names=NULL, sample_colors=NULL, filename=NULL, main="", scale="col", plot_width=6, plot_height=5, cex_col=0.5, cex_row=0.7) {
 	# Use existing dendrogram for rows
 	if (any(names(sel_feat) %in% '_dendrogram_row_')) {
 		print("Using existing dendrogram for clustering of rows.")
@@ -486,9 +533,15 @@ heatmap.selected_features <- function(feat_list, sel_feat, sel_names=NULL, sampl
 #' @param colorStart color start, defaults to 0.0
 #' @param colorAlpha color alpha, defaults to 0.6
 #' @export
-#' @import circlize plotrix
-#_' @examples
-#_' sunBurstPlotFromSubstanceClasses(rownames(tenerife$div_classes), tenerife$div_classes$frequency, colorStart=0.0, colorAlpha=0.6)
+#' @importFrom grDevices colorRampPalette pdf dev.off rainbow
+#' @importFrom graphics text
+#' @importFrom utils tail
+#' @importFrom circlize draw.sector
+#' @importFrom plotrix arctext
+#' @examples
+#' sunBurstPlotFromSubstanceClasses(rownames(marchantiales$div_classes),
+#' marchantiales$div_classes$frequency,
+#' colorStart=0.0, colorAlpha=0.6)
 sunBurstPlotFromSubstanceClasses <- function(classifierClasses, numberOfSpectra, colorStart=0.0, colorAlpha=0.6){
 	level <- unlist(lapply(X = strsplit(x = classifierClasses, split = "; "), FUN = length))
 
@@ -632,6 +685,281 @@ sunBurstPlotFromSubstanceClasses <- function(classifierClasses, numberOfSpectra,
 			)
 		})
 	})
+}
+
+
+
+# ---------- Make Classes at Level ----------
+#' Function to extract information at a specific ontology level or below of classification information.
+#'
+#' @param level The level of the ontology to extract information to
+#' @param div_samples Data frame with classes in rows and samples in columns.
+#' @export
+make_classes_at_level <- function(level=2, div_samples) {
+	# Extract classes at specific level
+	classes_samples_names <- NULL
+	classes_samples_names <- c(classes_samples_names, lapply(X=strsplit(rownames(div_samples), '; '), FUN=function(x) { gsub(x=paste(x[1:level],sep='',collapse='; '),pattern='; NA',replacement='') }))
+
+	# Count classes at specific level
+	classes_samples <- data.frame()
+	for (i in c(1:ncol(div_samples))) classes_samples <- rbind(classes_samples, rep(0, length(unique(classes_samples_names))))
+	classes_samples <- t(classes_samples)
+	colnames(classes_samples) <- colnames(div_samples)
+	rownames(classes_samples) <- unique(classes_samples_names)
+	for (i in rownames(classes_samples)) {
+		for (j in c(1:ncol(div_samples))) {
+			classes_samples[rownames(classes_samples)==i, j] <- sum(div_samples[grep(x=rownames(div_samples), pattern=i), j])
+		}
+	}
+
+	# Create data frame
+	classes <- classes_samples
+	classes[is.na(classes)] <- 0
+	classes <- apply(X=classes, MARGIN=1, FUN=function(x) { sum(x) })
+	classes <- data.frame(row.names=names(classes), frequency=as.numeric(classes))
+
+	# Imputation of NA with zeros
+	classes[is.na(classes)] <- 0
+	classes_samples[is.na(classes_samples)] <- 0
+
+	# Classification list for statistics
+	class_list <- as.data.frame(t(classes_samples))
+	class_list[is.na(class_list)] <- 0
+
+	# Return
+	return(class_list)
+}
+
+
+
+# ---------- Gap Weighting based on Thiele (1993) ----------
+#' Function to perform gap weighting on continuous values.
+#'
+#' This function converts continuous quantitative traits to distinct character states useful for calculating phylogenies.
+#' Here, we apply the gap weighting algorithm by Thiele (1993), https://doi.org/10.1006/clad.1993.1020 .
+#'
+#' @param morph_char A vector with character values
+#' @param states Number of states, defaults to 8
+#' @export
+#' @examples
+#' gap_weighting(marchantiales$char_list$thallus.width, states=8)
+gap_weighting <- function(morph_char, states=8) {
+	suppressWarnings({ morph_num <- as.numeric(morph_char) })
+
+	# Gap weighting
+	gap_weighted <- as.factor(as.character(unlist(lapply(X=as.list(morph_char), FUN=function(x) {
+		x
+		if ((is.na(x)) | (x == "?") | (x == "-") | (x <= 0) | (x == "1")) {
+			x
+		} else {
+			x = as.numeric(x)
+			x = round(((x - as.numeric(min(morph_num[morph_num>0], na.rm=T))) / (as.numeric(max(morph_num, na.rm=T)) - as.numeric(min(morph_num[morph_num>0], na.rm=T))) * (states - 1)), digits=0)
+		}
+	}))))
+
+	# Character states [ 0, 1, .., 9, A, .., Z]
+	gap_weighted <- as.character(gap_weighted)
+	for (i in c(10:36)) {
+		gap_weighted[(gap_weighted==i)] <- LETTERS[(i-10+1)]
+	}
+
+	return(gap_weighted)
+}
+
+
+
+# ---------- Export peak list as MAF ----------
+#' Function to export a peak table to MAF for use in MetaboLights.
+#'
+#' This function exports a peak table to MAF without any annotations. It should be run first.
+#'
+#' @param peak_list The peak table with MS1 features in rows and information and samples in columns
+#' @param maf_filename The filename of the MAF file
+#' @export
+#' @importFrom utils write.table
+export_maf <- function(peak_list, maf_filename) {
+	# Preparations
+	l <- nrow(peak_list)
+
+	# These columns are defined by MetaboLights mzTab
+	maf <- apply(X=data.frame(database_identifier=character(l),
+							  chemical_formula=character(l),
+							  smiles=character(l),
+							  inchi=character(l),
+							  metabolite_identification=character(l),
+							  mass_to_charge=peak_list$mzmed,
+							  fragmentation=character(l),
+							  modifications=character(l),
+							  charge=character(l),
+							  retention_time=peak_list$rtmed,
+							  taxid=character(l),
+							  species=character(l),
+							  database=character(l),
+							  database_version=character(l),
+							  reliability=character(l),
+							  uri=character(l),
+							  search_engine=character(l),
+							  search_engine_score=character(l),
+							  smallmolecule_abundance_sub=character(l),
+							  smallmolecule_abundance_stdev_sub=character(l),
+							  smallmolecule_abundance_std_error_sub=character(l),
+							  xcms_identifier=rownames(peak_list),
+							  peak_list,
+							  stringsAsFactors=FALSE),
+				 MARGIN=2, FUN=as.character)
+
+	# Export MAF
+	write.table(maf, file=maf_filename, row.names=FALSE, col.names=colnames(maf), quote=TRUE, sep="\t", na="\"\"")
+}
+
+
+
+# ---------- Update existing MAF with annotated compounds ----------
+#' Function to update an unannotated MAF with classification information for use in MetaboLights.
+#'
+#' This function updates an unannotated MAF with classification information. It should be run second on an unannotated MAF.
+#'
+#' @param maf_input The unannotated MAF file
+#' @param maf_output The filename of the resulting MAF
+#' @export
+#' @importFrom utils read.table write.table
+#' @importFrom ontologyIndex get_ontology
+annotate_maf_classes <- function(maf_input, maf_output) {
+	# Read CHEMONT ontology
+	obo <- get_ontology(file=url("https://raw.githubusercontent.com/stuchalk/cjld/master/ChemOnt_2_1.obo"), extract_tags="minimal")
+
+	# Import MAF
+	maf_out <- read.table(file=maf_input, quote="\"", sep="\t", na.strings="NA", header=TRUE, stringsAsFactors=TRUE)
+	maf_out[is.na(maf_out)] <- as.character("")
+
+	# Annotate classes
+	for (i in c(1:length(maf_out$xcms_identifier))) {
+		cl <- gsub(x=maf_out$primary_class[i], pattern='.*; ', replacement='')
+		id <- as.character(obo$id[which(as.character(obo$name) %in% as.character(cl))])
+
+		if (nchar(cl) > 1) {
+			maf_out$database_identifier[i] <- paste(id, collapse='|')
+			maf_out$metabolite_identification[i] <- paste(cl, collapse='|')
+		}
+	}
+
+	# Export MAF
+	write.table(maf_out, file=maf_output, row.names=FALSE, col.names=colnames(maf_out), quote=TRUE, sep="\t", na="\"\"")
+}
+
+
+
+# ---------- Update existing MAF with annotated compounds ----------
+#' Function to annotate a MAF for use in MetaboLights.
+#'
+#' This function annotates a MAF with structure identification. It should be run second on an unannotated MAF or third on a MAF with classification information.
+#'
+#' @param maf_input The input MAF file
+#' @param maf_output The filename of the resulting MAF
+#' @param polarity The polarity used ("neg" or "pos")
+#' @param xcms_id The id of XCMS peak detection, usually the FTxxxxx name
+#' @param pol_mode The polarization mode for any feature (e.g. rep("neg",nrow(ms1_def_neg))
+#' @param smiles Vector containing the SMILES information
+#' @param names The UPAC names of the annotated compounds
+#' @export
+#' @importFrom utils read.table write.table
+annotate_maf_compounds <- function(maf_input, maf_output, polarity, xcms_id, pol_mode, smiles, names) {
+	# Import MAF
+	maf_out <- read.table(file=maf_input, quote="\"", sep="\t", na.strings="NA", header=TRUE, stringsAsFactors=TRUE)
+	maf_out[is.na(maf_out)] <- as.character("")
+
+	maf_out$database_identifier <- as.character(maf_out$database_identifier)
+	maf_out$metabolite_identification <- as.character(maf_out$metabolite_identification)
+
+	# Annotate compounds
+	for (i in c(1:length(xcms_id))) {
+		if (pol_mode[i] == polarity) {
+			j <- which(maf_out$xcms_identifier==xcms_id[i])
+			if (length(j) > 0) {
+				if (nchar(as.character(maf_out$database_identifier[j])) > 0) {
+					maf_out$database_identifier[j] <- paste(c(smiles[i], maf_out$database_identifier[j]), collapse='|')
+					maf_out$metabolite_identification[j] <- paste(c(names[i], maf_out$metabolite_identification[j]), collapse='|')
+				} else {
+					maf_out$database_identifier[j] <- paste(smiles[i], collapse='|')
+					maf_out$metabolite_identification[j] <- paste(names[i], collapse='|')
+				}
+			}
+		}
+	}
+
+	# Remove non-standard columns "ms_level", "primary_class"
+	maf_out$ms_level <- NULL
+	maf_out$primary_class <- NULL
+
+	# Export MAF
+	write.table(maf_out, file=maf_output, row.names=FALSE, col.names=colnames(maf_out), quote=TRUE, sep="\t", na="\"\"")
+}
+
+
+
+# ---------- Make high-level descriptors from CDK names ----------
+#' Function to make abstracted high-level molecular descriptors from CDK names.
+#'
+#' @param descriptor_names A vector containing the names of the molecular descriptors
+#' @export
+make.high_level.descriptor <- function(descriptor_names) {
+	descriptor_names <- gsub(x=descriptor_names, pattern="MolWeight", replacement="Molecular Mass")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAtoms", replacement="Atom Count Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="numC", replacement="Number of C atoms")
+	descriptor_names <- gsub(x=descriptor_names, pattern="numN", replacement="Number of N atoms")
+	descriptor_names <- gsub(x=descriptor_names, pattern="numP", replacement="Number of P atoms")
+	descriptor_names <- gsub(x=descriptor_names, pattern="numO", replacement="Number of O atoms")
+	descriptor_names <- gsub(x=descriptor_names, pattern="numHydrogen", replacement="Number of Hydrogen atoms")
+	descriptor_names <- gsub(x=descriptor_names, pattern="CNratio", replacement="Molecular C to N ratio")
+	descriptor_names <- gsub(x=descriptor_names, pattern="XLogP", replacement="Partition Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="Fsp3", replacement="Molecular Non-flatness Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="MW", replacement="Molecular Weight")
+	descriptor_names <- gsub(x=descriptor_names, pattern="LipinskiFailures", replacement="Drug Likeness")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nRotB", replacement="Molecular Bond Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="MLogP", replacement="Partition Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAtom.*", replacement="Atom Count Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nB$", replacement="Molecular Bond Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nBase", replacement="Basic Group Count Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAromBond.*", replacement="Aromaticity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="naAromAtom.*", replacement="Aromaticity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(ALogP|ALogp2|AMR)", replacement="Partition Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAcid", replacement="Acidity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(nA|nR|nN|nD|nC|nF|nQ|nE|nG|nH|nI|nP|nL|nK|nM|nS|nT|nY|nV|nW)$", replacement="Amino Acid Count Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nSmallRings", replacement="Molecular Ring Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAromRings", replacement="Molecular Ring Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nRingBlocks", replacement="Molecular Ring Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nAromBlocks", replacement="Molecular Ring Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="nRings\\d", replacement="Molecular Ring Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="tpsaEfficiency", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="Zagreb", replacement="Eccentric Connectivity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="WPATH", replacement="Molecular Path Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="WPOL", replacement="Molecular Polarity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="WTPT.*", replacement="Molecular Path Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="VAdjMat", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="VABC", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="TopoPSA", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(topoShape|geomShape)", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="PetitjeanNumber", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="MDE(N|C|O)\\..*", replacement="Molecular Distance Edge Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="khs.*", replacement="Molecular Electron State Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="Kier\\d", replacement="Molecular Shape Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="HybRatio", replacement="Hybridization Ratio Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="fragC", replacement="Molecular Complexity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="FMF", replacement="Molecular Complexity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="ECCEN", replacement="Eccentric Connectivity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="ATSc.*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="ATSm.*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="ATSp.*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(PPSA|PNSA|DPSA|FPSA|FNSA|WPSA|WNSA|RPC|RNC|THSA|TPSA|RHSA|RPSA).*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(SCH\\.|VCH\\.).*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(SC\\.|VC\\.).*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(SPC\\.|VPC\\.).*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(SP\\.|VP\\.).*", replacement="Molecular Topological Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="(C1SP1|C2SP1|C1SP2|C2SP2|C3SP2|C1SP3|C2SP3|C3SP3|C4SP3)", replacement="Carbon Connectivity Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="apol", replacement="Molecular Electronic Descriptor")
+	descriptor_names <- gsub(x=descriptor_names, pattern="bpol", replacement="Molecular Electronic Descriptor")
+
+	return(descriptor_names)
 }
 
 

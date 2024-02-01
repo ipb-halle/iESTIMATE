@@ -10,6 +10,8 @@ select_features_random_forest(
   sel_colors,
   tune_length = 10,
   quantile_threshold = 0.95,
+  keepx_min = 10,
+  keepx_max = 0,
   plot_roc_filename = NULL
 )
 }
@@ -23,6 +25,10 @@ select_features_random_forest(
 \item{tune_length}{how often repeated cross validation is performed, defaults to 10}
 
 \item{quantile_threshold}{confidence level, defaults to 0.95}
+
+\item{keepx_min}{Minimum number of variables to keep for level (defaults to 10)}
+
+\item{keepx_max}{Maximum number of variables to keep for level (defaults to 0, which means no limit)}
 
 \item{plot_roc_filename}{plot metrics to external pdf, defaults to NULL}
 }

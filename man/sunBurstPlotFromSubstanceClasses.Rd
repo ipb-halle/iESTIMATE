@@ -23,3 +23,8 @@ sunBurstPlotFromSubstanceClasses(
 \description{
 Function to draw a sunburst plot
 }
+\examples{
+sunBurstPlotFromSubstanceClasses(rownames(marchantiales$div_classes),
+marchantiales$div_classes$frequency,
+colorStart=0.0, colorAlpha=0.6)
+}

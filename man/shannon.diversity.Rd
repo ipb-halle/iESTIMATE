@@ -10,7 +10,7 @@ shannon.diversity(p)
 \item{p}{vector with response variables of one sample}
 }
 \description{
-Function to calculate the Shannon diversity measure
+This function is now obsolete, as it returns the same values than vegan::diversity(x, index="shannon"). Since we do not expect variables with negative intensity, we exclude negative values and take the natural logarithm.
 }
 \examples{
 shannon.diversity(p=c(4,8))
