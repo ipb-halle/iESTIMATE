@@ -1,0 +1,59 @@
+---
+title: "Marchantiales"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Marchantiales}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Setup
+
+Installing and loading our package
+
+```{r}
+#devtools::install_github("https://github.com/ipb-halle/iESTIMATE")
+library(iESTIMATE)
+```
+
+# Examplary analyses
+
+## PLS-DA
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_pls <- select_features_pls(feat_matrix=marchantiales$comp_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, components=(nlevels(as.factor(marchantiales$metadata$species))-1))
+)
+heatmap.selected_features(feat_list=marchantiales$comp_list, sel_feat=sel_pls$`_selected_variables_`, sample_colors=marchantiales$colors, plot_width=10, plot_height=10, filename=NULL, main="PLS")
+```
+
+## Sunburst plot
+
+```{r, fig.width=16, fig.height=16, out.width=800, out.height=800}
+sunBurstPlotFromSubstanceClasses(rownames(marchantiales$div_classes), marchantiales$div_classes$frequency, colorStart=0.0, colorAlpha=0.6)
+```
+
+# Export peak tables for MetaboLights
+
+Annotate peak tables in negative ion mode.
+
+```{r, eval=FALSE}
+f.export_maf(cbind(ms1_def_neg, t(feat_list_neg)), "data/metabolites_maf_neg.tsv")
+f.annotate_maf_classes(maf_input="data/metabolites_maf_neg.tsv", maf_output="data/metabolites_maf_neg_classes.tsv")
+f.annotate_maf_compounds(maf_input="data/metabolites_maf_neg_classes.tsv", maf_output="data/m_MTBLS2239_LC-MS_negative_reverse-phase_metabolite_profiling_v2_maf.tsv", polarity="neg", xcms_id=rownames(ms1_def_neg), pol_mode=rep("neg",nrow(ms1_def_neg)), smiles=ms1_def_neg$smiles, names=ms1_def_neg$name)
+```
+
+Annotate peak tables in positive ion mode.
+
+```{r, eval=FALSE}
+f.export_maf(cbind(ms1_def_pos, t(feat_list_pos)), "data/metabolites_maf_pos.tsv")
+f.annotate_maf_classes(maf_input="data/metabolites_maf_pos.tsv", maf_output="data/metabolites_maf_pos_classes.tsv")
+f.annotate_maf_compounds(maf_input="data/metabolites_maf_pos_classes.tsv", maf_output="data/m_MTBLS2239_LC-MS_positive_reverse-phase_metabolite_profiling_v2_maf.tsv", polarity="pos", xcms_id=rownames(ms1_def_pos), pol_mode=rep("pos",nrow(ms1_def_pos)), smiles=ms1_def_pos$smiles, names=ms1_def_pos$name)
+```
