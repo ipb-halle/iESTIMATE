@@ -47,6 +47,8 @@ marchantiales[["uniq_list"]] <- read.table(file="use-cases/marchantiales/uniq_li
 marchantiales[["class_list"]] <- read.table(file="use-cases/marchantiales/class_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 marchantiales[["subclass_list"]] <- read.table(file="use-cases/marchantiales/subclass_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 marchantiales[["superclass_list"]] <- read.table(file="use-cases/marchantiales/superclass_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
+marchantiales[["npclass_list"]] <- read.table(file="use-cases/marchantiales/npclass_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
+marchantiales[["nppathway_list"]] <- read.table(file="use-cases/marchantiales/nppathway_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 marchantiales[["mdes_list"]] <- read.table(file="use-cases/marchantiales/mdes_list.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 marchantiales[["div_classes"]] <- read.table(file="use-cases/marchantiales/div_classes.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)
 marchantiales[["div_subclasses"]] <- read.table(file="use-cases/marchantiales/div_subclasses.tsv", header=TRUE, sep="\t", quote="\"", comment.char="", fill=FALSE, dec=".", stringsAsFactors=FALSE)

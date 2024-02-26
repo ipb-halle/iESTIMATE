@@ -23,21 +23,245 @@ Installing and loading our package
 library(iESTIMATE)
 ```
 
-# Examplary analyses
+# Overview on abstraction levels
 
-## PLS-DA
+To get an overview on abstraction levels and chemical diversity, sunburst plots can be carried out.
 
-```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
-suppressWarnings(
-sel_pls <- select_features_pls(feat_matrix=marchantiales$comp_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, components=(nlevels(as.factor(marchantiales$metadata$species))-1))
-)
-heatmap.selected_features(feat_list=marchantiales$comp_list, sel_feat=sel_pls$`_selected_variables_`, sample_colors=marchantiales$colors, plot_width=10, plot_height=10, filename=NULL, main="PLS")
-```
-
-## Sunburst plot
+## Suburst plot of CHEMONT classes
 
 ```{r, fig.width=16, fig.height=16, out.width=800, out.height=800}
 sunBurstPlotFromSubstanceClasses(rownames(marchantiales$div_classes), marchantiales$div_classes$frequency, colorStart=0.0, colorAlpha=0.6)
+```
+
+## Sunburst plot of Natural Product Classifier
+
+```{r, fig.width=16, fig.height=16, out.width=800, out.height=800}
+sunBurstPlotFromSubstanceClasses(rownames(marchantiales$div_npclasses), marchantiales$div_npclasses$frequency, colorStart=0.0, colorAlpha=0.6)
+```
+
+# Estimating EMVs at different levels of abstraction
+
+To speed up Random Forest analyses, the use of parallel processing is recommended.
+
+```{r}
+library(parallel)
+library(e1071)
+library(doMC)
+nSlaves <- detectCores(all.tests=FALSE, logical=FALSE)
+registerDoMC(nSlaves)
+```
+
+## Estimating EMVs at level of molecules
+
+First, we demonstrate the use of PLS-DA to select essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_pls_comp_list <- select_features_pls(feat_matrix=marchantiales$comp_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, components=(nlevels(as.factor(marchantiales$metadata$species))-1))
+)
+```
+
+Print selected variables and model metrics.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_pls_comp_list$`_selected_variables_`)))))
+print(sel_pls_comp_list$`_selected_variables_`)
+print(sel_pls_comp_list$`_multiclass_metrics_`)
+print(sel_pls_comp_list$`_model_r2_`)
+```
+
+Draw heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmap.selected_features(feat_list=marchantiales$comp_list, sel_feat=sel_pls_comp_list$`_selected_variables_`, sample_colors=marchantiales$colors, plot_width=10, plot_height=10, filename=NULL, main="PLS-DA")
+```
+
+Now, use Random Forest to select for essential variables. RF will also be used for the other abstraction levels.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_comp_list <- select_features_random_forest(feat_matrix=marchantiales$comp_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and model metrics.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_comp_list$`_selected_variables_`)))))
+print(sel_rf_comp_list$`_selected_variables_`)
+print(sel_rf_comp_list$`_multiclass_metrics_`)
+print(sel_rf_comp_list$`_model_r2_`)
+```
+
+Draw heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmap.selected_features(feat_list=marchantiales$comp_list, sel_feat=sel_rf_comp_list$`_selected_variables_`, sample_colors=marchantiales$metadata$color, plot_width=8, plot_height=6, cex_col=0.1, cex_row=0.4, filename=NULL, main="Random Forest")
+```
+
+Draw interactive heatmap. In the following we will only plot the interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+library(heatmaply)
+heatmaply(scale(marchantiales$comp_list[, which(colnames(marchantiales$comp_list) %in% sel_rf_comp_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of classes
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_class_list <- select_features_random_forest(feat_matrix=marchantiales$class_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_class_list$`_selected_variables_`)))))
+print(sel_rf_class_list$`_selected_variables_`)
+#print(sel_rf_class_list$`_multiclass_metrics_`)
+print(sel_rf_class_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$class_list[, which(colnames(marchantiales$class_list) %in% sel_rf_class_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of subclasses
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_subclass_list <- select_features_random_forest(feat_matrix=marchantiales$subclass_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_subclass_list$`_selected_variables_`)))))
+print(sel_rf_subclass_list$`_selected_variables_`)
+#print(sel_rf_subclass_list$`_multiclass_metrics_`)
+print(sel_rf_subclass_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$subclass_list[, which(colnames(marchantiales$subclass_list) %in% sel_rf_subclass_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of superclasses
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_superclass_list <- select_features_random_forest(feat_matrix=marchantiales$superclass_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_superclass_list$`_selected_variables_`)))))
+print(sel_rf_superclass_list$`_selected_variables_`)
+#print(sel_rf_superclass_list$`_multiclass_metrics_`)
+print(sel_rf_superclass_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$superclass_list[, which(colnames(marchantiales$superclass_list) %in% sel_rf_superclass_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of Natural Product Classes
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_npclass_list <- select_features_random_forest(feat_matrix=marchantiales$npclass_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_npclass_list$`_selected_variables_`)))))
+print(sel_rf_npclass_list$`_selected_variables_`)
+#print(sel_rf_npclass_list$`_multiclass_metrics_`)
+print(sel_rf_npclass_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$npclass_list[, which(colnames(marchantiales$npclass_list) %in% sel_rf_npclass_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of Natural Product Pathways
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_nppathway_list <- select_features_random_forest(feat_matrix=marchantiales$nppathway_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_nppathway_list$`_selected_variables_`)))))
+print(sel_rf_nppathway_list$`_selected_variables_`)
+#print(sel_rf_nppathway_list$`_multiclass_metrics_`)
+print(sel_rf_nppathway_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$nppathway_list[, which(colnames(marchantiales$nppathway_list) %in% sel_rf_nppathway_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Estimating EMVs at level of molecular descriptors
+
+Use Random Forest to select for essential variables.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+suppressWarnings(
+sel_rf_mdes_list <- select_features_random_forest(feat_matrix=marchantiales$mdes_list, sel_factor=as.factor(marchantiales$metadata$species), sel_colors=marchantiales$metadata$color, tune_length=10, quantile_threshold=0.95, plot_roc_filename=NULL)
+)
+```
+
+Print selected variables and R-squared.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+print(paste("Number of essential variables:", length(unique(unlist(sel_rf_mdes_list$`_selected_variables_`)))))
+print(sel_rf_mdes_list$`_selected_variables_`)
+#print(sel_rf_mdes_list$`_multiclass_metrics_`)
+print(sel_rf_mdes_list$`_model_r2_`)
+```
+
+Draw interactive heatmap.
+
+```{r, message=FALSE, fig.width=8, fig.height=6, out.width=800, out.height=600}
+heatmaply(scale(marchantiales$mdes_list[, which(colnames(marchantiales$mdes_list) %in% sel_rf_mdes_list$`_selected_variables_`)]), k_row=1, k_col=1, colors=colorRampPalette(c('darkblue','white','darkred'), alpha=0.1, bias=1)(256), file=NULL, selfcontained=TRUE, fontsize_row=6, fontsize_col=3)
+```
+
+## Close parallel processing
+
+After analyses have been done, close parallel processing.
+
+```{r}
+detach("package:doMC", unload=TRUE)
 ```
 
 # Export peak tables for MetaboLights

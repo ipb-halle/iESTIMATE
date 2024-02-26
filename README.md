@@ -1,7 +1,7 @@
 # iESTIMATE computational analysis framework for Eco-Metabolomics data
 iESTIMATE = Identifying ESsenTIal Molecular vAriables in Terrestrial Ecology
 
-Version: 1.0
+Version: 1.1
 
 ## Use-cases
 The iESTIMATE framework has been developed to be applied to eco-metabolomics studies to answer a wide range of research questions. The following use-cases demonstrate the power of the framework:
@@ -10,12 +10,11 @@ The iESTIMATE framework has been developed to be applied to eco-metabolomics stu
 - [Chemical Diversity and Classification of Secondary Metabolites in Nine Bryophyte Species](https://github.com/ipb-halle/iESTIMATE/tree/main/use-cases/mtbls709)
 - [Investigating untargeted metabolomics for its use in integrative taxonomy - Linking metabolomics, DNA marker-based se-quencing and bioimaging of phenotypes](https://github.com/ipb-halle/iESTIMATE/tree/main/use-cases/riccia-chemotaxonomy)
 
-## TODO
-- modularize
-- create CWL-based workflow
-- make workflow FAIR
-
 ## History
+
+### Version 1.1:
+- added some examples on variable selection to Marchantiales
+- properly handle all data types now
 
 ### Version 1.0:
 - added Marchantiales study
