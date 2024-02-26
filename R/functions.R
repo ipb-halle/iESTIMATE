@@ -406,7 +406,7 @@ select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, t
 
 	# Handle plotting
 	if (is.null(plot_roc_filename)) {
-		pdf(file=NULL)
+
 	} else {
 		pdf(file=as.character(plot_roc_filename), encoding="ISOLatin1", pointsize=10, width=6, height=6, family="Helvetica")
 	}
@@ -429,7 +429,9 @@ select_features_random_forest <- function(feat_matrix, sel_factor, sel_colors, t
 	# Performance measures
 	sel_rf <- do.call(c, list(sel_rf, f.performance_measures_caret(model=model_rf, sel_factor=sel_factor, sel_colors=sel_colors)))
 
-	dev.off()
+	if (! is.null(plot_roc_filename)) {
+		dev.off()
+	}
 
 	return(sel_rf)
 }
