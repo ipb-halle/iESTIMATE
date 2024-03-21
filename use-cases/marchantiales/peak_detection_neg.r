@@ -709,7 +709,7 @@ for (i in 1:nrow(class_list_neg)) {
 		cl <- colnames(class_list_neg)[j]
 		ft <- classifier_canopus_neg$Metabolite.name[which(gsub(x=classifier_canopus_neg$primary_class, pattern='.*; ', replacement='') == cl)]
 		ints <- as.numeric(feat_list_neg[i, which(colnames(feat_list_neg) %in% ft)])
-		class_int_list_neg[i, j] <- sum(ints) * as.numeric(class_list_neg[i, j])
+		class_int_list_neg[i, j] <- sum(ints)
 	}
 }
 
@@ -768,7 +768,7 @@ for (i in 1:nrow(superclass_list_neg)) {
 		cl <- colnames(superclass_list_neg)[j]
 		ft <- classifier_canopus_neg$Metabolite.name[which(classifier_canopus_neg$primary_class %in% classifier_canopus_neg$primary_class[grep(x=classifier_canopus_neg$primary_class, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_neg[i, which(colnames(feat_list_neg) %in% ft)])
-		superclass_int_list_neg[i, j] <- sum(ints) * as.numeric(superclass_list_neg[i, j])
+		superclass_int_list_neg[i, j] <- sum(ints)
 	}
 }
 
@@ -827,7 +827,7 @@ for (i in 1:nrow(subclass_list_neg)) {
 		cl <- colnames(subclass_list_neg)[j]
 		ft <- classifier_canopus_neg$Metabolite.name[which(classifier_canopus_neg$primary_class %in% classifier_canopus_neg$primary_class[grep(x=classifier_canopus_neg$primary_class, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_neg[i, which(colnames(feat_list_neg) %in% ft)])
-		subclass_int_list_neg[i, j] <- sum(ints) * as.numeric(subclass_list_neg[i, j])
+		subclass_int_list_neg[i, j] <- sum(ints)
 	}
 }
 
@@ -905,7 +905,7 @@ for (i in 1:nrow(npclass_list_neg)) {
 		cl <- colnames(npclass_list_neg)[j]
 		ft <- classifier_canopus_neg$Metabolite.name[which(gsub(x=classifier_canopus_neg$NPC.class, pattern='.*; ', replacement='') == cl)]
 		ints <- as.numeric(feat_list_neg[i, which(colnames(feat_list_neg) %in% ft)])
-		npclass_int_list_neg[i, j] <- sum(ints) * as.numeric(npclass_list_neg[i, j])
+		npclass_int_list_neg[i, j] <- sum(ints)
 	}
 }
 
@@ -962,7 +962,7 @@ for (i in 1:nrow(nppathway_list_neg)) {
 		cl <- colnames(nppathway_list_neg)[j]
 		ft <- classifier_canopus_neg$Metabolite.name[which(classifier_canopus_neg$NPC.pathway %in% classifier_canopus_neg$NPC.pathway[grep(x=classifier_canopus_neg$NPC.pathway, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_neg[i, which(colnames(feat_list_neg) %in% ft)])
-		nppathway_int_list_neg[i, j] <- sum(ints) * as.numeric(nppathway_list_neg[i, j])
+		nppathway_int_list_neg[i, j] <- sum(ints)
 	}
 }
 

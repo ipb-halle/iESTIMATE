@@ -709,7 +709,7 @@ for (i in 1:nrow(class_list_pos)) {
 		cl <- colnames(class_list_pos)[j]
 		ft <- classifier_canopus_pos$Metabolite.name[which(gsub(x=classifier_canopus_pos$primary_class, pattern='.*; ', replacement='') == cl)]
 		ints <- as.numeric(feat_list_pos[i, which(colnames(feat_list_pos) %in% ft)])
-		class_int_list_pos[i, j] <- sum(ints) * as.numeric(class_list_pos[i, j])
+		class_int_list_pos[i, j] <- sum(ints)
 	}
 }
 
@@ -768,7 +768,7 @@ for (i in 1:nrow(superclass_list_pos)) {
 		cl <- colnames(superclass_list_pos)[j]
 		ft <- classifier_canopus_pos$Metabolite.name[which(classifier_canopus_pos$primary_class %in% classifier_canopus_pos$primary_class[grep(x=classifier_canopus_pos$primary_class, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_pos[i, which(colnames(feat_list_pos) %in% ft)])
-		superclass_int_list_pos[i, j] <- sum(ints) * as.numeric(superclass_list_pos[i, j])
+		superclass_int_list_pos[i, j] <- sum(ints)
 	}
 }
 
@@ -827,7 +827,7 @@ for (i in 1:nrow(subclass_list_pos)) {
 		cl <- colnames(subclass_list_pos)[j]
 		ft <- classifier_canopus_pos$Metabolite.name[which(classifier_canopus_pos$primary_class %in% classifier_canopus_pos$primary_class[grep(x=classifier_canopus_pos$primary_class, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_pos[i, which(colnames(feat_list_pos) %in% ft)])
-		subclass_int_list_pos[i, j] <- sum(ints) * as.numeric(subclass_list_pos[i, j])
+		subclass_int_list_pos[i, j] <- sum(ints)
 	}
 }
 
@@ -905,7 +905,7 @@ for (i in 1:nrow(npclass_list_pos)) {
 		cl <- colnames(npclass_list_pos)[j]
 		ft <- classifier_canopus_pos$Metabolite.name[which(gsub(x=classifier_canopus_pos$NPC.class, pattern='.*; ', replacement='') == cl)]
 		ints <- as.numeric(feat_list_pos[i, which(colnames(feat_list_pos) %in% ft)])
-		npclass_int_list_pos[i, j] <- sum(ints) * as.numeric(npclass_list_pos[i, j])
+		npclass_int_list_pos[i, j] <- sum(ints)
 	}
 }
 
@@ -962,7 +962,7 @@ for (i in 1:nrow(nppathway_list_pos)) {
 		cl <- colnames(nppathway_list_pos)[j]
 		ft <- classifier_canopus_pos$Metabolite.name[which(classifier_canopus_pos$NPC.pathway %in% classifier_canopus_pos$NPC.pathway[grep(x=classifier_canopus_pos$NPC.pathway, pattern=cl)]) ]
 		ints <- as.numeric(feat_list_pos[i, which(colnames(feat_list_pos) %in% ft)])
-		nppathway_int_list_pos[i, j] <- sum(ints) * as.numeric(nppathway_list_pos[i, j])
+		nppathway_int_list_pos[i, j] <- sum(ints)
 	}
 }
 
